@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blog — IICD Abuja</title>
+<meta name="description" content="Reflections, reports, and stories from IICD — on art, culture, and creative development in Abuja and beyond.">
+<link rel="stylesheet" href="shared.css">
+<style>
+.blog-intro{background:var(--deep);padding:80px 60px}
+.blog-intro-inner{max-width:840px}
+.blog-intro h2{font-family:'Cormorant Garamond',serif;font-size:clamp(28px,4vw,50px);font-weight:300;color:var(--cream);margin-bottom:20px}
+.blog-intro p{color:rgba(245,240,232,.6);font-size:14px;line-height:1.9}
+.blog-featured{padding:90px 60px;background:var(--mid)}
+.blog-featured-inner{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1.2fr 1fr;gap:80px;align-items:center}
+.blog-featured .tag{font-size:9px;letter-spacing:.25em;text-transform:uppercase;color:var(--terracotta);margin-bottom:14px}
+.blog-featured h2{font-family:'Cormorant Garamond',serif;font-size:clamp(26px,3.5vw,44px);font-weight:300;line-height:1.1;margin-bottom:20px}
+.blog-featured p{color:var(--muted);font-size:14px;line-height:1.9;margin-bottom:14px}
+.blog-featured blockquote{font-family:'Cormorant Garamond',serif;font-size:clamp(18px,2vw,26px);font-style:italic;color:var(--text);line-height:1.5;border-left:2px solid var(--gold);padding-left:24px;margin:28px 0}
+.blog-featured img{width:100%;display:block}
+.blog-grid-section{padding:90px 60px;background:var(--cream)}
+.blog-grid-section h2{font-family:'Cormorant Garamond',serif;font-size:clamp(26px,4vw,44px);font-weight:300;text-align:center;margin-bottom:56px}
+.blog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:52px 40px;max-width:1200px;margin:0 auto}
+.blog-post{display:flex;flex-direction:column}
+.blog-post-bar{width:32px;height:1px;background:var(--gold);margin-bottom:18px}
+.blog-post-tag{font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin-bottom:10px}
+.blog-post h3{font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:400;color:var(--text);line-height:1.25;margin-bottom:14px}
+.blog-post p{font-size:13px;color:var(--muted);line-height:1.85;flex:1}
+.blog-post-source{margin-top:18px;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:rgba(26,18,8,.3)}
+.blog-dark{background:var(--deep);padding:90px 60px}
+.blog-dark-inner{max-width:1000px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+.blog-dark h2{font-family:'Cormorant Garamond',serif;font-size:clamp(26px,3.5vw,44px);font-weight:300;color:var(--cream);margin-bottom:20px}
+.blog-dark p{color:rgba(245,240,232,.6);font-size:14px;line-height:1.9;margin-bottom:14px}
+.blog-dark img{width:100%;display:block;border:1px solid rgba(201,168,76,.15)}
+@media(max-width:900px){
+  .blog-intro,.blog-featured,.blog-grid-section,.blog-dark{padding:64px 24px}
+  .blog-featured-inner,.blog-dark-inner{grid-template-columns:1fr;gap:40px}
+  .blog-grid{grid-template-columns:1fr;gap:40px}
+}
+</style>
+</head>
+<body>
+<nav>
+  <a class="nav-logo" href="index.html"><img src="files/iicdcenterlogo.jpg" alt="IICD"></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li>
+    <li><a href="the-space.html">The Space</a></li><li><a href="artist-residency.html">Residency</a></li>
+    <li><a href="exhibitions.html">Exhibitions</a></li><li><a href="the-gallery.html">Gallery</a></li>
+    <li><a href="abuja-open-house-2022.html">Open House 2022</a></li><li><a href="abuja-open-house-2019.html">Open House 2019</a></li>
+    <li><a href="past-events.html">Past Events</a></li><li><a href="coming-events.html">Coming Events</a></li>
+    <li><a href="blog.html" class="active">Blog</a></li><li><a href="contact.html">Contact</a></li>
+  </ul>
+  <div class="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></div>
+</nav>
+<div class="mobile-nav" id="mobileNav">
+  <a href="index.html" onclick="closeMenu()">Home</a><a href="about.html" onclick="closeMenu()">About</a>
+  <a href="the-space.html" onclick="closeMenu()">The Space</a><a href="artist-residency.html" onclick="closeMenu()">Residency</a>
+  <a href="exhibitions.html" onclick="closeMenu()">Exhibitions</a><a href="the-gallery.html" onclick="closeMenu()">Gallery</a>
+  <a href="abuja-open-house-2022.html" onclick="closeMenu()">Open House 2022</a><a href="abuja-open-house-2019.html" onclick="closeMenu()">Open House 2019</a>
+  <a href="past-events.html" onclick="closeMenu()">Past Events</a><a href="coming-events.html" onclick="closeMenu()">Coming Events</a>
+  <a href="blog.html" onclick="closeMenu()">Blog</a><a href="contact.html" onclick="closeMenu()">Contact</a>
+</div>
+
+<div class="page-hero">
+  <div class="page-hero-bg" style="background-image:url('files/10TH+ANNIVERSARY3.jpg');"></div>
+  <div class="page-hero-content">
+    <p class="page-hero-eyebrow">Journal &amp; Updates</p>
+    <h1>The <em>Blog</em></h1>
+  </div>
+</div>
+
+<div class="blog-intro">
+  <div class="blog-intro-inner">
+    <span class="section-label">IICD Journal</span>
+    <h2>Reflections on Art, Culture &amp; Creative Practice</h2>
+    <p>Notes, reports, press coverage, and stories from IICD's programmes and the broader Abuja creative scene. This page collects writing about the Open House, residency programme, gallery exhibitions, and IICD's wider cultural mission — in the words of participants, critics, and the IICD team.</p>
+  </div>
+</div>
+
+<section class="blog-featured">
+  <div class="blog-featured-inner">
+    <div>
+      <div class="tag">Featured · ThisDay Live, November 2024</div>
+      <h2>Meaningful Connections for These Times</h2>
+      <p>Founded in 2010 as a direct offshoot of the Ford Foundation's mentorship programme, IICD has significantly contributed to developing future cultural managers in Nigeria. Recently, it has played a pivotal role behind the scenes in positioning Abuja's art scene as a distinct cultural identity.</p>
+      <blockquote>"Abuja may appear soulless from afar, as many have described it in the past. However, deconstructing this psychological stereotype is part of the IICD Center's mission."</blockquote>
+      <p>The profile traces IICD's journey from its founding by Nduwhite Ndubuisi Ahanonu and the late Harrison Ikibah, through its growing programme of residencies, exhibitions, and the Abuja Open House festival — the largest visual arts event in Nigeria's federal capital city.</p>
+    </div>
+    <div>
+      <img src="files/inside-out.jpg" alt="IICD Centre">
+    </div>
+  </div>
+</section>
+
+<section class="blog-grid-section">
+  <h2>More from the Journal</h2>
+  <div class="blog-grid">
+    <div class="blog-post reveal">
+      <div class="blog-post-bar"></div>
+      <div class="blog-post-tag">Open House · 2023</div>
+      <h3>In Abuja, a Fiesta Conceived to Connect the Dots</h3>
+      <p>The third edition of the Abuja Open House — themed Catalytic Synthesis — is a one-of-a-kind blend of dynamic art experiences and gallery hopping that provides solid foundations for convergence of Abuja's creative framework: discovering, sharing, and learning before merging into what co-founder Nduwhite Ahanonu calls "a triangle." Over 22 venues, four days, an unmissable event in the Nigerian capital. Its unique selling proposition: guaranteeing intense art and creative experiences, stimulating discussions, and assured civic and cultural exchanges.</p>
+      <div class="blog-post-source">ThisDay Live · October 2023</div>
+    </div>
+    <div class="blog-post reveal">
+      <div class="blog-post-bar"></div>
+      <div class="blog-post-tag">Curatorial · Profile</div>
+      <h3>Charting a New Course for the Abuja Art Scene</h3>
+      <p>With lustrous curatorial credentials, artist Nduwhite Ndubuisi Ahanonu has initiated landmark projects to dispel Abuja's unflattering reputation as a soulless metropolis. From the Dakar Biennale to Berlin, Venice, and Karlstad — and back to Maitama. His IICD Center, established in 2010, focuses on developing creative talent and managing cultural exchange programmes. "Abuja is a city with enormous creative potential. Our job is to make that visible."</p>
+      <div class="blog-post-source">ThisDay Live · March 2023</div>
+    </div>
+    <div class="blog-post reveal">
+      <div class="blog-post-bar"></div>
+      <div class="blog-post-tag">Residency · 2022</div>
+      <h3>Upcycling Redefined: Art, Architecture &amp; the Circular Economy</h3>
+      <p>For three weeks, 15 creatives — artists, architects, engineers, AI/robotic engineers, and environmental practitioners — came together at IICD for the Upcycling Redefined workshop, supported by the US Embassy, AD Connect, and Transcorp Hilton. The result was a new body of work and a deepened conversation about sustainability as creative practice. "Life seeks more of itself, wastes nothing and engages fruitfully with its surroundings."</p>
+      <div class="blog-post-source">IICD · 2022</div>
+    </div>
+    <div class="blog-post reveal">
+      <div class="blog-post-bar"></div>
+      <div class="blog-post-tag">Mentorship · Curating</div>
+      <h3>What IICD Taught Me About Curating</h3>
+      <p>"Its founder, Nduwhite Ndubuisi Ahanonu, provided me with such direct mentorship in a space where I am constantly learning and putting ideas into practice. The IICD curatorial classes have been of immense benefit, adding technical discipline to everything I do. I think the IICD Centre is a one-of-a-kind space for any growing curator — providing the kind of rigorous learning, development, and kindness that are so important for a budding curator in Nigeria."</p>
+      <div class="blog-post-source">Aisha Aliyu-Bima, Institut Français Curatorial Laureate · 2023</div>
+    </div>
+    <div class="blog-post reveal">
+      <div class="blog-post-bar"></div>
+      <div class="blog-post-tag">Exhibition · 2019</div>
+      <h3>Migration, Memory, and the Art of Bolaji Ogunnwo</h3>
+      <p>Lagos-based painter and University of Lagos lecturer Bolaji Ogunnwo brought his solo exhibition on global migration challenges to the IICD Centre in June 2019. Chief Curator Nduwhite Ndubuisi noted: "Bolaji is corroborating one of the ideologies of the IICD Center — the artist must have something to say, for mastery over form is not his goal but rather the adapting of form to its inner meaning." Ogunnwo's work spans over 50 local and international shows.</p>
+      <div class="blog-post-source">IICD · June 2019</div>
+    </div>
+    <div class="blog-post reveal">
+      <div class="blog-post-bar"></div>
+      <div class="blog-post-tag">Workshop · 2018</div>
+      <h3>Upcycling: The New Economy — A Report</h3>
+      <p>Eleven artists from across Nigeria gathered at IICD in April 2018 for a landmark workshop on upcycling and sustainability, supported by the US Embassy. Facilitated by Dr. Victor Fadeke (Hubert H. Humphrey / Ashoka Fellow), Dr. Chukwuemeka Nwigwe, and others. The opening of works drew Abuja's creative community to the IICD Centre on 3 May. A rich conversation between art, ecology, and the future of the Nigerian creative economy.</p>
+      <div class="blog-post-source">IICD · May 2018</div>
+    </div>
+  </div>
+</section>
+
+<section class="blog-dark">
+  <div class="blog-dark-inner">
+    <div>
+      <span class="section-label">Press &amp; Media</span>
+      <h2>IICD in the News</h2>
+      <p>IICD and the Abuja Open House have been covered by leading Nigerian publications including ThisDay Live, The Guardian Nigeria, and Vanguard. The centre's work has also been featured in international arts writing on the development of the West African contemporary art scene.</p>
+      <p>For press enquiries, interview requests, or media accreditation for IICD events, please contact:</p>
+      <p><a href="mailto:nduwhite@gmail.com" style="color:var(--gold);">nduwhite@gmail.com</a><br><a href="tel:+2348097501995" style="color:var(--gold);">08097501995</a></p>
+      <a href="contact.html" class="btn" style="margin-top:24px;">Contact the Team</a>
+    </div>
+    <div>
+      <img src="files/abujaOPENhouse+2022BANNER.jpg" alt="Open House 2022">
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© Copyright IICD. All Rights Reserved. Designed by iBot.</p>
+  <div class="footer-links">
+    <a href="https://instagram.com/iicdcenter" target="_blank">Instagram</a>
+    <a href="https://facebook.com/iicdcenter" target="_blank">Facebook</a>
+    <a href="contact.html">Contact</a>
+  </div>
+  <div class="footer-logo"><img src="files/iicdcenterlogo.jpg" alt="IICD"></div>
+</footer>
+<script src="shared.js"></script>
+</body>
+</html>

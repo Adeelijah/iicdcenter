@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Past Events — IICD Abuja</title>
+<meta name="description" content="A full record of IICD's programmes, exhibitions, residencies, and cultural activations since 2010.">
+<link rel="stylesheet" href="shared.css">
+<style>
+.pe-intro{padding:80px 60px;max-width:840px}
+.pe-intro h2{font-family:'Cormorant Garamond',serif;font-size:clamp(28px,4vw,50px);font-weight:300;line-height:1.1;margin-bottom:20px}
+.pe-intro p{color:var(--muted);font-size:14px;line-height:1.9}
+.pe-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:3px}
+.pe-card{position:relative;overflow:hidden;aspect-ratio:3/4;display:block;text-decoration:none}
+.pe-card img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s}
+.pe-card:hover img{transform:scale(1.06)}
+.pe-card.wide{grid-column:span 2;aspect-ratio:16/9}
+.pe-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(26,18,8,.92) 0%,rgba(26,18,8,.1) 55%,transparent 100%);display:flex;flex-direction:column;justify-content:flex-end;padding:28px}
+.pe-yr{font-size:9px;letter-spacing:.25em;text-transform:uppercase;color:var(--gold);margin-bottom:6px}
+.pe-title{font-family:'Cormorant Garamond',serif;font-size:20px;color:var(--cream);font-weight:300;line-height:1.25;margin-bottom:6px}
+.pe-desc{font-size:11px;color:rgba(245,240,232,.55);line-height:1.6}
+.pe-list{padding:90px 60px;background:var(--deep)}
+.pe-list h2{font-family:'Cormorant Garamond',serif;font-size:clamp(28px,4vw,48px);font-weight:300;color:var(--cream);margin-bottom:56px}
+.pe-items{max-width:1000px}
+.pe-item{display:grid;grid-template-columns:80px 1fr;gap:32px;padding:28px 0;border-bottom:1px solid rgba(255,255,255,.06)}
+.pe-item:first-child{border-top:1px solid rgba(255,255,255,.06)}
+.pi-yr{font-family:'Cormorant Garamond',serif;font-size:28px;font-weight:300;color:var(--gold)}
+.pi-tag{font-size:8px;letter-spacing:.18em;text-transform:uppercase;border:1px solid rgba(201,168,76,.25);color:var(--gold);padding:4px 10px;display:inline-block;margin-bottom:8px}
+.pi-info h3{font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:300;color:var(--cream);margin-bottom:6px}
+.pi-info p{font-size:13px;color:rgba(245,240,232,.5);line-height:1.8}
+@media(max-width:900px){
+  .pe-intro,.pe-list{padding:64px 24px}
+  .pe-grid{grid-template-columns:1fr 1fr}.pe-card.wide{grid-column:span 1;aspect-ratio:3/4}
+  .pe-item{grid-template-columns:1fr;gap:8px}
+}
+</style>
+</head>
+<body>
+<nav>
+  <a class="nav-logo" href="index.html"><img src="files/iicdcenterlogo.jpg" alt="IICD"></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li>
+    <li><a href="the-space.html">The Space</a></li><li><a href="artist-residency.html">Residency</a></li>
+    <li><a href="exhibitions.html">Exhibitions</a></li><li><a href="the-gallery.html">Gallery</a></li>
+    <li><a href="abuja-open-house-2022.html">Open House 2022</a></li><li><a href="abuja-open-house-2019.html">Open House 2019</a></li>
+    <li><a href="past-events.html" class="active">Past Events</a></li><li><a href="coming-events.html">Coming Events</a></li>
+    <li><a href="blog.html">Blog</a></li><li><a href="contact.html">Contact</a></li>
+  </ul>
+  <div class="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></div>
+</nav>
+<div class="mobile-nav" id="mobileNav">
+  <a href="index.html" onclick="closeMenu()">Home</a><a href="about.html" onclick="closeMenu()">About</a>
+  <a href="the-space.html" onclick="closeMenu()">The Space</a><a href="artist-residency.html" onclick="closeMenu()">Residency</a>
+  <a href="exhibitions.html" onclick="closeMenu()">Exhibitions</a><a href="the-gallery.html" onclick="closeMenu()">Gallery</a>
+  <a href="abuja-open-house-2022.html" onclick="closeMenu()">Open House 2022</a><a href="abuja-open-house-2019.html" onclick="closeMenu()">Open House 2019</a>
+  <a href="past-events.html" onclick="closeMenu()">Past Events</a><a href="coming-events.html" onclick="closeMenu()">Coming Events</a>
+  <a href="blog.html" onclick="closeMenu()">Blog</a><a href="contact.html" onclick="closeMenu()">Contact</a>
+</div>
+
+<div class="page-hero">
+  <div class="page-hero-bg" style="background-image:url('files/20617045_10155647708694851_729990303113732469_o.jpg');"></div>
+  <div class="page-hero-content">
+    <p class="page-hero-eyebrow">Archive · 2010–Present</p>
+    <h1><em>Past</em> Events</h1>
+  </div>
+</div>
+
+<div class="pe-intro">
+  <span class="section-label">Programme History</span>
+  <h2>Over a Decade of Creative Activity</h2>
+  <p>Since 2010, IICD has delivered a rich and varied programme of exhibitions, residencies, workshops, performances, screenings, and public events. This page documents that history — from the inaugural Abuja Open House to landmark solo shows, sustainability workshops, and international exchanges.</p>
+</div>
+
+<div class="pe-grid">
+  <a class="pe-card wide" href="abuja-open-house-2022.html">
+    <img src="files/abujaOPENhouse+2022BANNER.jpg" alt="Abuja Open House 2022">
+    <div class="pe-overlay"><p class="pe-yr">2022 · Festival</p><p class="pe-title">Abuja Open House 2022</p><p class="pe-desc">2nd edition · 22+ venues · 1,500+ attendees · 4 days</p></div>
+  </a>
+  <a class="pe-card" href="#">
+    <img src="files/abujaOPENhouse+2022BANNER(1).jpg" alt="Upcycling Redefined">
+    <div class="pe-overlay"><p class="pe-yr">2022 · Workshop</p><p class="pe-title">Upcycling Redefined</p><p class="pe-desc">3-week workshop · US Embassy · 15 creatives</p></div>
+  </a>
+  <a class="pe-card" href="#">
+    <img src="files/10TH+ANNIVERSARY3.jpg" alt="10th Anniversary">
+    <div class="pe-overlay"><p class="pe-yr">2018 · Milestone</p><p class="pe-title">IICD 8th Anniversary</p><p class="pe-desc">Exhibitions · Awards to US Embassy &amp; Transcorp Hilton</p></div>
+  </a>
+  <a class="pe-card wide" href="abuja-open-house-2019.html">
+    <img src="files/ABUJAOPENHOUSEWEBBANNER3.jpg" alt="Abuja Open House 2019">
+    <div class="pe-overlay"><p class="pe-yr">2019 · Festival</p><p class="pe-title">Abuja Open House 2019</p><p class="pe-desc">Inaugural edition · October 25–27 · 10th anniversary</p></div>
+  </a>
+  <a class="pe-card" href="#">
+    <img src="files/POSTERMARCH28.jpg" alt="Migration Solo Show">
+    <div class="pe-overlay"><p class="pe-yr">2019 · Solo Show</p><p class="pe-title">Bolaji Ogunnwo — Migration</p><p class="pe-desc">IICD Centre · 20 June – 10 July 2019</p></div>
+  </a>
+  <a class="pe-card" href="#">
+    <img src="files/poster4.jpg" alt="Upcycling The New Economy">
+    <div class="pe-overlay"><p class="pe-yr">2018 · Workshop</p><p class="pe-title">Upcycling: The New Economy</p><p class="pe-desc">22 Apr – 3 May 2018 · 11 artists · US Embassy</p></div>
+  </a>
+  <a class="pe-card" href="#">
+    <img src="files/20617045_10155647708694851_729990303113732469_o.jpg" alt="Abuja Alive">
+    <div class="pe-overlay"><p class="pe-yr">2016 · Exhibition</p><p class="pe-title">Abuja Alive</p><p class="pe-desc">Group exhibition · IICD Centre, Abuja</p></div>
+  </a>
+  <a class="pe-card" href="#">
+    <img src="files/inside-out.jpg" alt="Catalyst for Future Cities">
+    <div class="pe-overlay"><p class="pe-yr">2015 · Exhibition</p><p class="pe-title">Catalyst for Future Cities</p><p class="pe-desc">Hilton at 30 · Transcorp Hilton Hotel</p></div>
+  </a>
+</div>
+
+<section class="pe-list">
+  <h2>Full Programme Record</h2>
+  <div class="pe-items">
+    <div class="pe-item reveal"><div class="pi-yr">2024</div><div class="pi-info"><div class="pi-tag">Exhibition</div><h3>Reflection Time is Now</h3><p>Atrium Gallery, Foreign Affairs Ministry, Central Business District, Abuja. Supported by IICD and Mswitch. Opened 3 July 2024. Designed to provoke thought across cultural boundaries and capture the Zeitgeist of a generation.</p></div></div>
+    <div class="pe-item reveal"><div class="pi-yr">2023</div><div class="pi-info"><div class="pi-tag">Festival</div><h3>Abuja Open House 2023 — Catalytic Synthesis</h3><p>Third edition. October 2023. Theme: Catalytic Synthesis. Expanded multi-venue programme across Abuja. Described by ThisDay Live as "without a doubt the most significant visual arts festival in the federal capital city."</p></div></div>
+    <div class="pe-item reveal"><div class="pi-yr">2022</div><div class="pi-info"><div class="pi-tag">Festival</div><h3>Abuja Open House 2022</h3><p>Second edition. 22+ venues, 4 days, 1,500+ attendees. Exhibitions at Fraser Suites and venues across Abuja including works by John Oyedemi and Akachukwu Chukwuemeka. The city's most attended art event.</p></div></div>
+    <div class="pe-item reveal"><div class="pi-yr">2022</div><div class="pi-info"><div class="pi-tag">Workshop</div><h3>Upcycling Redefined</h3><p>Three-week workshop with the US Embassy, AD Connect, and Transcorp Hilton. 15 creatives selected from open call — artists, architects, engineers, environmentalists, industrial designers, and AI/robotic engineers exploring sustainability through creative practice.</p></div></div>
+    <div class="pe-item reveal"><div class="pi-yr">2019</div><div class="pi-info"><div class="pi-tag">Festival</div><h3>Abuja Open House 2019 — Inaugural Edition</h3><p>October 25–27, 2019. First edition. Created in collaboration with the US Embassy. Included Time in Perspective group show at Nordic Hotel, Mabushi. Coincided with IICD's 10th anniversary. Awards to US Embassy and Transcorp Hilton.</p></div></div>
+    <div class="pe-item reveal"><div class="pi-yr">2019</div><div class="pi-info"><div class="pi-tag">Solo Exhibition</div><h3>Bolaji Ogunnwo — Migration</h3><p>IICD Centre, Abuja. 20 June – 10 July 2019. Painter and University of Lagos lecturer Bolaji Ogunnwo explores global migration challenges facing Nigeria. Over 50 local and international shows to his name.</p></div></div>
+    <div class="pe-item reveal"><div class="pi-yr">2018</div><div class="pi-info"><div class="pi-tag">Solo Exhibition</div><h3>Prof. Vigdis Holen — Solo Show</h3><p>IICD Centre, Abuja. Solo exhibition by Norwegian artist Prof. Vigdis Holen, participating in IICD's international residency programme. Part of a sustained series of international artist exchanges at the centre.</p></div></div>
+    <div class="pe-item reveal"><div class="pi-yr">2018</div><div class="pi-info"><div class="pi-tag">Workshop / Exhibition</div><h3>Upcycling: The New Economy</h3><p>22 April – 3 May 2018, IICD Centre. 11 artists. Facilitated by Dr. Victor Fadeke (Hubert H. Humphrey / Ashoka Fellow), Dr. Chukwuemeka Nwigwe (UNN), Nduwhite Ndubuisi, Ifesinachi C. Nwanyanwu, Dotun Poopola, Dada A. Oluwasuen. Exhibition opened 3 May, 5pm. US Embassy supported.</p></div></div>
+    <div class="pe-item reveal"><div class="pi-yr">2018</div><div class="pi-info"><div class="pi-tag">Workshop</div><h3>Portfolio Review with Caroline Hancock</h3><p>Collaboration with Institut Français, Abuja. France-based curator Caroline Hancock led portfolio review sessions for emerging Nigerian artists and curators — a targeted capacity-building workshop.</p></div></div>
+    <div class="pe-item reveal"><div class="pi-yr">2018</div><div class="pi-info"><div class="pi-tag">Film Screening</div><h3>Racing Extinction — Film Screening &amp; Discussion</h3><p>22 April 2018, IICD Centre, 5pm. Oscar-winning documentary directed by Louie Psihoyos. Moderated by Osi Otsemobor in conversation with Romeo Shagba (Video Artist) and Amarachi Okafor (Installation Artist &amp; Curator).</p></div></div>
+    <div class="pe-item reveal"><div class="pi-yr">2017</div><div class="pi-info"><div class="pi-tag">Performance</div><h3>Though I Don't Know You — Francophonie Festival</h3><p>Belgian Ambassador's Residence, Abuja. Performance in celebration of the Francophonie Festival. Curated and produced by Nduwhite Ndubuisi Ahanonu. A work exploring cultural encounter and unfamiliarity.</p></div></div>
+    <div class="pe-item reveal"><div class="pi-yr">2017</div><div class="pi-info"><div class="pi-tag">Residency</div><h3>IICD International Artists in Residence</h3><p>November 2017. 30-day residency at 4 Oguda Close, Maitama, Abuja. Public sharing event Saturday 19 November, 3pm. International artists in dialogue with the Abuja creative community.</p></div></div>
+    <div class="pe-item reveal"><div class="pi-yr">2016</div><div class="pi-info"><div class="pi-tag">Exhibition</div><h3>Abuja Alive</h3><p>Group exhibition at IICD Centre, Abuja. Curated by Nduwhite Ndubuisi Ahanonu. Celebrated the vitality of Abuja's emerging creative community and asserted the city's place in the Nigerian contemporary art landscape.</p></div></div>
+    <div class="pe-item reveal"><div class="pi-yr">2016</div><div class="pi-info"><div class="pi-tag">Residency Exchange</div><h3>Finding the True North — Karlstad, Sweden</h3><p>Co-curated international artist residency in Karlstad, Sweden. An exchange between Nigerian and Swedish artists, part of IICD's broader programme of international cultural diplomacy and creative exchange.</p></div></div>
+    <div class="pe-item reveal"><div class="pi-yr">2015</div><div class="pi-info"><div class="pi-tag">Exhibition</div><h3>Catalyst for Future Cities — Hilton at 30</h3><p>Transcorp Hilton Hotel, Abuja. Major group exhibition marking the hotel's 30th anniversary. Curated by Nduwhite Ndubuisi Ahanonu. A defining early project for IICD at one of Nigeria's most prestigious venues.</p></div></div>
+    <div class="pe-item reveal"><div class="pi-yr">2010</div><div class="pi-info"><div class="pi-tag">Foundation</div><h3>IICD Founded</h3><p>International Institute for Creative Development established by Nduwhite Ndubuisi Ahanonu and Harrison Ikibah as a direct offshoot of the Ford Foundation mentorship programme. Located at Maitama, Abuja, with a mission to advance cultural diplomacy and creative development in Nigeria.</p></div></div>
+  </div>
+</section>
+
+<footer>
+  <p>© Copyright IICD. All Rights Reserved. Designed by iBot.</p>
+  <div class="footer-links">
+    <a href="https://instagram.com/iicdcenter" target="_blank">Instagram</a>
+    <a href="https://facebook.com/iicdcenter" target="_blank">Facebook</a>
+    <a href="contact.html">Contact</a>
+  </div>
+  <div class="footer-logo"><img src="files/iicdcenterlogo.jpg" alt="IICD"></div>
+</footer>
+<script src="shared.js"></script>
+</body>
+</html>

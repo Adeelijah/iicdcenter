@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Abuja Open House 2022 — IICD Abuja</title>
+<meta name="description" content="Abuja Open House 2022 — IICD's flagship art festival, the largest visual arts event in Nigeria's capital. 22+ venues, 4 days, 1500+ attendees.">
+<link rel="stylesheet" href="shared.css">
+<style>
+.oh-banner{background:var(--deep);padding:40px 60px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:24px;border-bottom:1px solid rgba(201,168,76,.1)}
+.oh-stat{text-align:center}
+.oh-stat-num{font-family:'Cormorant Garamond',serif;font-size:44px;font-weight:300;color:var(--gold);line-height:1}
+.oh-stat-label{font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:rgba(245,240,232,.35);margin-top:6px}
+.oh-body{display:grid;grid-template-columns:1fr 1fr;min-height:75vh}
+.oh-body-img{overflow:hidden}
+.oh-body-img img{width:100%;height:100%;object-fit:cover;display:block;transition:transform 6s ease}
+.oh-body-img:hover img{transform:scale(1.04)}
+.oh-body-text{background:var(--deep);padding:80px 64px;display:flex;flex-direction:column;justify-content:center}
+.oh-body-text h2{font-family:'Cormorant Garamond',serif;font-size:clamp(26px,3vw,42px);font-weight:300;color:var(--cream);margin-bottom:24px;line-height:1.15}
+.oh-body-text p{color:rgba(245,240,232,.65);font-size:14px;line-height:1.9;margin-bottom:14px}
+.oh-quote{background:var(--terracotta);padding:80px 60px;text-align:center}
+.oh-quote blockquote{font-family:'Cormorant Garamond',serif;font-size:clamp(20px,3vw,36px);font-weight:300;font-style:italic;color:white;max-width:820px;margin:0 auto;line-height:1.5}
+.oh-quote cite{display:block;margin-top:24px;font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.6);font-style:normal}
+.oh-imgs{display:grid;grid-template-columns:repeat(2,1fr);gap:3px}
+.oh-img-item{overflow:hidden;aspect-ratio:4/3}
+.oh-img-item img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s}
+.oh-img-item:hover img{transform:scale(1.05)}
+.oh-details{background:var(--mid);padding:90px 60px}
+.oh-details-inner{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:80px}
+.oh-details h2{font-family:'Cormorant Garamond',serif;font-size:clamp(26px,3.5vw,44px);font-weight:300;margin-bottom:32px;grid-column:1/-1}
+.od-col h3{font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:300;color:var(--terracotta);margin-bottom:16px}
+.od-col ul{list-style:none;display:flex;flex-direction:column;gap:10px}
+.od-col li{display:flex;gap:12px;font-size:13px;color:var(--muted);line-height:1.7}
+.od-col li::before{content:'—';color:var(--gold);flex-shrink:0}
+.oh-cta{background:var(--deep);padding:80px 60px;text-align:center}
+.oh-cta h2{font-family:'Cormorant Garamond',serif;font-size:clamp(26px,4vw,48px);font-weight:300;color:var(--cream);margin-bottom:16px}
+.oh-cta p{color:rgba(245,240,232,.55);font-size:14px;max-width:520px;margin:0 auto 36px}
+@media(max-width:900px){
+  .oh-banner{padding:32px 24px;justify-content:flex-start;gap:28px}
+  .oh-body{grid-template-columns:1fr}.oh-body-img{aspect-ratio:4/3}.oh-body-text{padding:56px 24px}
+  .oh-quote,.oh-details,.oh-cta{padding:64px 24px}
+  .oh-details-inner{grid-template-columns:1fr;gap:40px}
+  .oh-imgs{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+<nav>
+  <a class="nav-logo" href="index.html"><img src="files/iicdcenterlogo.jpg" alt="IICD"></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li>
+    <li><a href="the-space.html">The Space</a></li><li><a href="artist-residency.html">Residency</a></li>
+    <li><a href="exhibitions.html">Exhibitions</a></li><li><a href="the-gallery.html">Gallery</a></li>
+    <li><a href="abuja-open-house-2022.html" class="active">Open House 2022</a></li><li><a href="abuja-open-house-2019.html">Open House 2019</a></li>
+    <li><a href="past-events.html">Past Events</a></li><li><a href="coming-events.html">Coming Events</a></li>
+    <li><a href="blog.html">Blog</a></li><li><a href="contact.html">Contact</a></li>
+  </ul>
+  <div class="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></div>
+</nav>
+<div class="mobile-nav" id="mobileNav">
+  <a href="index.html" onclick="closeMenu()">Home</a><a href="about.html" onclick="closeMenu()">About</a>
+  <a href="the-space.html" onclick="closeMenu()">The Space</a><a href="artist-residency.html" onclick="closeMenu()">Residency</a>
+  <a href="exhibitions.html" onclick="closeMenu()">Exhibitions</a><a href="the-gallery.html" onclick="closeMenu()">Gallery</a>
+  <a href="abuja-open-house-2022.html" onclick="closeMenu()">Open House 2022</a><a href="abuja-open-house-2019.html" onclick="closeMenu()">Open House 2019</a>
+  <a href="past-events.html" onclick="closeMenu()">Past Events</a><a href="coming-events.html" onclick="closeMenu()">Coming Events</a>
+  <a href="blog.html" onclick="closeMenu()">Blog</a><a href="contact.html" onclick="closeMenu()">Contact</a>
+</div>
+
+<div class="page-hero">
+  <div class="page-hero-bg" style="background-image:url('files/abujaOPENhouse+2022BANNER.jpg');"></div>
+  <div class="page-hero-content">
+    <p class="page-hero-eyebrow">2nd Edition · 2022</p>
+    <h1>Abuja Open <em>House</em> 2022</h1>
+  </div>
+</div>
+
+<div class="oh-banner">
+  <div class="oh-stat"><div class="oh-stat-num">1500+</div><div class="oh-stat-label">Attendees</div></div>
+  <div class="oh-stat"><div class="oh-stat-num">22+</div><div class="oh-stat-label">Venues</div></div>
+  <div class="oh-stat"><div class="oh-stat-num">4</div><div class="oh-stat-label">Days</div></div>
+  <div class="oh-stat"><div class="oh-stat-num">2nd</div><div class="oh-stat-label">Edition</div></div>
+  <div class="oh-stat"><div class="oh-stat-num">2022</div><div class="oh-stat-label">Year</div></div>
+</div>
+
+<div class="oh-body">
+  <div class="oh-body-img"><img src="files/abujaOPENhouse+2022BANNER.jpg" alt="Abuja Open House 2022"></div>
+  <div class="oh-body-text">
+    <span class="section-label">2nd Edition</span>
+    <h2>Abuja's Largest Art Festival Returns</h2>
+    <p>The second edition of the Abuja Open House held in 2022 — after its planned 2020 edition was disrupted by the COVID-19 pandemic. Animating over 22 venues across Abuja over four days, it was the most attended art event in the capital city, attracting over 1,500 attendees.</p>
+    <p>Created and produced by IICD in collaboration with the United States Embassy in Abuja, the Open House is a four-day fiesta conceived to connect and bridge the gap between Abuja's creative audience, art spaces, and galleries — and to democratise access to contemporary art in Nigeria's federal capital.</p>
+    <p>The 2022 edition attracted an impressive run thanks to its creative director, management team, curators, and — most importantly — volunteers. It recorded a significant increase in gallery visits compared to the 2019 inaugural edition and effectively helped to groom new cultural players in the industry.</p>
+    <a href="abuja-open-house-2019.html" class="btn" style="margin-top:24px;">See the 2019 Edition →</a>
+  </div>
+</div>
+
+<section class="oh-quote">
+  <blockquote>"Abuja Open House is without a doubt the most significant visual arts festival in the federal capital city, animating over 22 venues over four days and elevating the city's cultural prestige."</blockquote>
+  <cite>— ThisDay Live, 2023</cite>
+</section>
+
+<div class="oh-imgs">
+  <div class="oh-img-item"><img src="files/abujaOPENhouse+2022BANNER.jpg" alt="Open House 2022 Banner"></div>
+  <div class="oh-img-item"><img src="files/abujaOPENhouse+2022BANNER(1).jpg" alt="Open House 2022"></div>
+  <div class="oh-img-item"><img src="files/inside-out.jpg" alt="IICD Gallery"></div>
+  <div class="oh-img-item"><img src="files/10TH+ANNIVERSARY3.jpg" alt="IICD Anniversary"></div>
+</div>
+
+<section class="oh-details">
+  <div class="oh-details-inner">
+    <h2>About the 2022 Festival</h2>
+    <div class="od-col reveal">
+      <h3>What Happened</h3>
+      <ul>
+        <li>Multi-venue gallery hops across 22+ locations in Abuja over four days</li>
+        <li>Exhibitions at Fraser Suites and landmark venues across the city</li>
+        <li>Works by artists including John Oyedemi and Akachukwu Chukwuemeka</li>
+        <li>Artist talks, panel discussions, and curatorial conversations</li>
+        <li>Live performances and site-specific interventions</li>
+        <li>VIP receptions and evening private views at major Abuja venues</li>
+        <li>Public screenings and film programmes</li>
+        <li>Workshops and creative sessions open to the public</li>
+        <li>New volunteers trained as cultural industry participants</li>
+      </ul>
+    </div>
+    <div class="od-col reveal">
+      <h3>The Open House Model</h3>
+      <ul>
+        <li>Each iteration signifies a point of divergence — discovering, sharing, and learning</li>
+        <li>The festival's unique selling point is its multi-venue model spanning the whole city</li>
+        <li>Guarantees intense art experiences and stimulating civic and cultural exchanges</li>
+        <li>A board of directors leads each edition — new directors chosen and invited each year</li>
+        <li>The mandate: consistently grow and strategically democratise art and culture</li>
+        <li>Aims to take art to communities that are disenfranchised from cultural access</li>
+      </ul>
+      <h3 style="margin-top:28px;">The 2023 Edition</h3>
+      <ul>
+        <li>Third edition held October 2023 under the theme <em>Catalytic Synthesis</em></li>
+        <li>Continued to grow the festival's footprint as Abuja's signature art event</li>
+        <li>Watch @iicdcenter on Instagram for the next edition announcement</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="oh-cta">
+  <span class="section-label" style="color:var(--gold);">Get Involved</span>
+  <h2>Be Part of the Next Open House</h2>
+  <p>Artists, venues, sponsors, and volunteers are the lifeblood of the Abuja Open House. Get in touch to find out how you can participate in the next edition.</p>
+  <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
+    <a href="contact.html" class="btn">Contact IICD</a>
+    <a href="abuja-open-house-2019.html" class="btn btn-light">See the 2019 Edition</a>
+  </div>
+</section>
+
+<footer>
+  <p>© Copyright IICD. All Rights Reserved. Designed by iBot.</p>
+  <div class="footer-links">
+    <a href="https://instagram.com/iicdcenter" target="_blank">Instagram</a>
+    <a href="https://facebook.com/iicdcenter" target="_blank">Facebook</a>
+    <a href="contact.html">Contact</a>
+  </div>
+  <div class="footer-logo"><img src="files/iicdcenterlogo.jpg" alt="IICD"></div>
+</footer>
+<script src="shared.js"></script>
+</body>
+</html>

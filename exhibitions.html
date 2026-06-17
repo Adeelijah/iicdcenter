@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Exhibitions — IICD Abuja</title>
+<meta name="description" content="Past and current exhibitions at IICD Abuja — solo shows, group exhibitions, and collaborative programmes.">
+<link rel="stylesheet" href="shared.css">
+<style>
+.ex-intro{padding:80px 60px;max-width:900px}
+.ex-intro h2{font-family:'Cormorant Garamond',serif;font-size:clamp(28px,4vw,48px);font-weight:300;line-height:1.1;margin-bottom:20px}
+.ex-intro p{color:var(--muted);font-size:14px;line-height:1.9;margin-bottom:14px}
+.ex-list{padding:0 60px 90px}
+.ex-item{display:grid;grid-template-columns:110px 1fr auto;gap:40px;align-items:start;padding:40px 0;border-bottom:1px solid rgba(26,18,8,.08);max-width:1100px;margin:0 auto}
+.ex-item:first-child{border-top:1px solid rgba(26,18,8,.08)}
+.ex-year{font-family:'Cormorant Garamond',serif;font-size:34px;font-weight:300;color:var(--gold);line-height:1}
+.ex-info h3{font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:300;color:var(--text);line-height:1.2;margin-bottom:8px}
+.ex-meta{font-size:10px;letter-spacing:.15em;text-transform:uppercase;color:var(--muted);margin-bottom:10px}
+.ex-info p{font-size:13px;color:var(--muted);line-height:1.8}
+.ex-tag{font-size:9px;letter-spacing:.16em;text-transform:uppercase;border:1px solid rgba(26,18,8,.15);padding:6px 14px;color:var(--muted);white-space:nowrap;height:fit-content}
+.ex-dark{background:var(--deep);padding:90px 60px}
+.ex-dark-inner{max-width:1100px;margin:0 auto}
+.ex-dark h2{font-family:'Cormorant Garamond',serif;font-size:clamp(28px,4vw,46px);font-weight:300;color:var(--cream);margin-bottom:48px}
+.ex-dark-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:2px}
+.ex-card{padding:40px;border:1px solid rgba(201,168,76,.1);transition:border-color .3s,transform .3s}
+.ex-card:hover{border-color:rgba(201,168,76,.4);transform:translateY(-4px)}
+.ex-card .yr{font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:14px}
+.ex-card h3{font-family:'Cormorant Garamond',serif;font-size:21px;font-weight:300;color:var(--cream);line-height:1.25;margin-bottom:12px}
+.ex-card p{font-size:13px;color:rgba(245,240,232,.5);line-height:1.8}
+@media(max-width:900px){
+  .ex-intro,.ex-list{padding:64px 24px}
+  .ex-item{grid-template-columns:1fr;gap:10px}.ex-tag{display:none}
+  .ex-dark{padding:64px 24px}.ex-dark-grid{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+<nav>
+  <a class="nav-logo" href="index.html"><img src="files/iicdcenterlogo.jpg" alt="IICD"></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li>
+    <li><a href="the-space.html">The Space</a></li><li><a href="artist-residency.html">Residency</a></li>
+    <li><a href="exhibitions.html" class="active">Exhibitions</a></li><li><a href="the-gallery.html">Gallery</a></li>
+    <li><a href="abuja-open-house-2022.html">Open House 2022</a></li><li><a href="abuja-open-house-2019.html">Open House 2019</a></li>
+    <li><a href="past-events.html">Past Events</a></li><li><a href="coming-events.html">Coming Events</a></li>
+    <li><a href="blog.html">Blog</a></li><li><a href="contact.html">Contact</a></li>
+  </ul>
+  <div class="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></div>
+</nav>
+<div class="mobile-nav" id="mobileNav">
+  <a href="index.html" onclick="closeMenu()">Home</a><a href="about.html" onclick="closeMenu()">About</a>
+  <a href="the-space.html" onclick="closeMenu()">The Space</a><a href="artist-residency.html" onclick="closeMenu()">Residency</a>
+  <a href="exhibitions.html" onclick="closeMenu()">Exhibitions</a><a href="the-gallery.html" onclick="closeMenu()">Gallery</a>
+  <a href="abuja-open-house-2022.html" onclick="closeMenu()">Open House 2022</a><a href="abuja-open-house-2019.html" onclick="closeMenu()">Open House 2019</a>
+  <a href="past-events.html" onclick="closeMenu()">Past Events</a><a href="coming-events.html" onclick="closeMenu()">Coming Events</a>
+  <a href="blog.html" onclick="closeMenu()">Blog</a><a href="contact.html" onclick="closeMenu()">Contact</a>
+</div>
+
+<div class="page-hero">
+  <div class="page-hero-bg" style="background-image:url('files/inside-out.jpg');"></div>
+  <div class="page-hero-content">
+    <p class="page-hero-eyebrow">Gallery Programme</p>
+    <h1><em>Exhibitions</em></h1>
+  </div>
+</div>
+
+<div class="ex-intro">
+  <span class="section-label">Our Exhibition Programme</span>
+  <h2>Showcasing Nigerian and African Contemporary Art</h2>
+  <p>IICD curates and hosts a year-round exhibitions programme celebrating the diversity and depth of Nigerian and African creative practice. Our gallery space in Maitama has shown solo exhibitions, group shows, residency outcomes, and collaborative projects with artists from across Nigeria and abroad.</p>
+  <p>We welcome exhibition proposals from artists and curators. Our programming prioritises works that engage with contemporary issues, cultural exchange, and the evolving identity of the African continent. As Chief Curator Nduwhite Ndubuisi Ahanonu has noted, we operate from the Kandinsky principle: the artist must have something to say.</p>
+</div>
+
+<div class="ex-list">
+  <div class="ex-item reveal">
+    <div class="ex-year">2024</div>
+    <div class="ex-info">
+      <div class="ex-meta">Group Exhibition · Atrium Gallery, Foreign Affairs Ministry, CBD Abuja</div>
+      <h3>Reflection Time is Now</h3>
+      <p>Supported by IICD and Mswitch. Opened 3 July 2024. A programme designed to provoke thought and discussion across cultural boundaries, capturing the Zeitgeist of a generation. Held at the Atrium Gallery, Central Business District, Abuja.</p>
+    </div>
+    <div class="ex-tag">Group Show</div>
+  </div>
+  <div class="ex-item reveal">
+    <div class="ex-year">2022</div>
+    <div class="ex-info">
+      <div class="ex-meta">Multi-Venue Group Exhibition · Abuja Open House</div>
+      <h3>Catalytic Synthesis — Open House 2022</h3>
+      <p>Presented across 22+ venues as part of the Abuja Open House 2022. Works by multiple Nigerian artists including John Oyedemi and Akachukwu Chukwuemeka, exhibited at Fraser Suites and other landmark Abuja venues over four days.</p>
+    </div>
+    <div class="ex-tag">Group Show</div>
+  </div>
+  <div class="ex-item reveal">
+    <div class="ex-year">2022</div>
+    <div class="ex-info">
+      <div class="ex-meta">Workshop Exhibition · US Embassy Collaboration · IICD Centre</div>
+      <h3>Upcycling Redefined</h3>
+      <p>Exhibition of works realised during the three-week Upcycling Redefined workshop. Featuring 15 artists, architects, and designers who came together to explore sustainability and the circular economy through creative practice. In collaboration with the US Embassy and Transcorp Hilton Abuja.</p>
+    </div>
+    <div class="ex-tag">Workshop</div>
+  </div>
+  <div class="ex-item reveal">
+    <div class="ex-year">2019</div>
+    <div class="ex-info">
+      <div class="ex-meta">Group Exhibition · Nordic Hotel, Mabushi, Abuja</div>
+      <h3>Time in Perspective</h3>
+      <p>Presented at the lobby of the Nordic Hotel, Mabushi, Abuja as part of the Abuja Open House 2019. Opened at a VIP reception serenaded by Turkish musical duo Sinan Bora Saribas (violin) and Kutluhan Gozutok (guitar). A group exhibition exploring how artists negotiate time — historical, personal, and collective — in their practice.</p>
+    </div>
+    <div class="ex-tag">Group Show</div>
+  </div>
+  <div class="ex-item reveal">
+    <div class="ex-year">2019</div>
+    <div class="ex-info">
+      <div class="ex-meta">Solo Exhibition · IICD Centre, Abuja · 20 June – 10 July 2019</div>
+      <h3>Bolaji Ogunnwo — Migration</h3>
+      <p>Solo exhibition by Lagos-based artist and University of Lagos lecturer Bolaji Ogunnwo, exploring global challenges of migration facing Nigeria. Ogunnwo's work spans over 50 local and international shows. Chief Curator Nduwhite Ndubuisi: "Bolaji is corroborating one of the ideologies of the IICD Center — the artist must have something to say, for mastery over form is not his goal but rather the adapting of form to its inner meaning."</p>
+    </div>
+    <div class="ex-tag">Solo Show</div>
+  </div>
+  <div class="ex-item reveal">
+    <div class="ex-year">2018</div>
+    <div class="ex-info">
+      <div class="ex-meta">Solo Exhibition · IICD Centre, Abuja</div>
+      <h3>Prof. Vigdis Holen — Solo Exhibition</h3>
+      <p>Solo exhibition by Norwegian artist Prof. Vigdis Holen, who participated in IICD's international residency programme. One of several international artists to show at the IICD Centre as part of the residency and cultural exchange programme.</p>
+    </div>
+    <div class="ex-tag">Solo Show</div>
+  </div>
+  <div class="ex-item reveal">
+    <div class="ex-year">2018</div>
+    <div class="ex-info">
+      <div class="ex-meta">Workshop Exhibition · IICD Centre · Opened 3 May 2018, 5pm</div>
+      <h3>Upcycling: The New Economy</h3>
+      <p>Exhibition of works created during the April–May 2018 residency workshop on sustainability and upcycling. 11 artists. Facilitated by Dr. Victor Fadeke, Dr. Chukwuemeka Nwigwe, Nduwhite Ndubuisi, Ifesinachi C. Nwanyanwu, Dotun Poopola, and Dada A. Oluwasuen. Supported by the US Embassy.</p>
+    </div>
+    <div class="ex-tag">Workshop</div>
+  </div>
+  <div class="ex-item reveal">
+    <div class="ex-year">2017</div>
+    <div class="ex-info">
+      <div class="ex-meta">Performance · Belgian Ambassador's Residence, Abuja</div>
+      <h3>Though I Don't Know You — Francophonie Festival</h3>
+      <p>Performance in celebration of the Francophonie Festival, held at the Belgian Ambassador's residence in Abuja. Curated and produced by Nduwhite Ndubuisi Ahanonu. An intimate performance work exploring themes of cultural encounter and unfamiliarity.</p>
+    </div>
+    <div class="ex-tag">Performance</div>
+  </div>
+  <div class="ex-item reveal">
+    <div class="ex-year">2016</div>
+    <div class="ex-info">
+      <div class="ex-meta">Group Exhibition · IICD Centre, Abuja</div>
+      <h3>Abuja Alive</h3>
+      <p>A landmark group exhibition at the IICD Centre celebrating the vitality of Abuja's emerging creative community. Curated by Nduwhite Ndubuisi Ahanonu. Brought together painters, sculptors, and mixed media artists to assert Abuja's place in the Nigerian contemporary art landscape.</p>
+    </div>
+    <div class="ex-tag">Group Show</div>
+  </div>
+  <div class="ex-item reveal">
+    <div class="ex-year">2015</div>
+    <div class="ex-info">
+      <div class="ex-meta">Group Exhibition · Transcorp Hilton Hotel, Abuja</div>
+      <h3>Catalyst for Future Cities — Hilton at 30</h3>
+      <p>A major group exhibition curated by Nduwhite Ndubuisi Ahanonu at Transcorp Hilton Hotel, Abuja, as part of the hotel's 30th anniversary celebrations. A defining early project for IICD, bringing its curatorial vision to one of Nigeria's most prestigious hotel venues.</p>
+    </div>
+    <div class="ex-tag">Group Show</div>
+  </div>
+</div>
+
+<section class="ex-dark">
+  <div class="ex-dark-inner">
+    <span class="section-label">Open Call &amp; Ongoing Programmes</span>
+    <h2>Exhibit at IICD</h2>
+    <div class="ex-dark-grid">
+      <div class="ex-card reveal">
+        <div class="yr">Ongoing · Open Call</div>
+        <h3>Submit an Exhibition Proposal</h3>
+        <p>IICD welcomes proposals for solo and group exhibitions at the IICD Centre gallery. We are particularly interested in work engaging with cultural exchange, social development, environmental practice, and contemporary African identity. Send a brief proposal and 5 work samples to info@iicd.org.</p>
+      </div>
+      <div class="ex-card reveal">
+        <div class="yr">Annual · Residency Outcome</div>
+        <h3>Residency Exhibition Programme</h3>
+        <p>Each IICD residency cycle concludes with a public exhibition or presentation of work developed at the centre. These shows are open to the public and free to attend. They represent some of the most exciting new work being made in Abuja each year.</p>
+      </div>
+      <div class="ex-card reveal">
+        <div class="yr">Annual · Festival</div>
+        <h3>Abuja Open House Exhibition Programme</h3>
+        <p>Artists can submit work for inclusion in the Abuja Open House multi-venue exhibition programme, held annually across 22+ locations in Abuja over four days. The Open House is the largest platform for visual art in Nigeria's capital.</p>
+      </div>
+      <div class="ex-card reveal">
+        <div class="yr">Year-Round · Curatorial</div>
+        <h3>Curatorial Development Programme</h3>
+        <p>IICD offers structured curatorial classes for emerging curators — learning through real exhibitions, real artists, and real feedback. Participants develop practical curatorial skills through IICD's year-round exhibition programme.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© Copyright IICD. All Rights Reserved. Designed by iBot.</p>
+  <div class="footer-links">
+    <a href="https://instagram.com/iicdcenter" target="_blank">Instagram</a>
+    <a href="https://facebook.com/iicdcenter" target="_blank">Facebook</a>
+    <a href="contact.html">Contact</a>
+  </div>
+  <div class="footer-logo"><img src="files/iicdcenterlogo.jpg" alt="IICD"></div>
+</footer>
+<script src="shared.js"></script>
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Gallery — IICD Abuja</title>
+<meta name="description" content="IICD's gallery space in Maitama, Abuja — exhibitions of contemporary Nigerian and African art.">
+<link rel="stylesheet" href="shared.css">
+<style>
+.gal-intro{background:var(--deep);padding:80px 60px}
+.gal-intro-inner{max-width:900px}
+.gal-intro h2{font-family:'Cormorant Garamond',serif;font-size:clamp(28px,4vw,50px);font-weight:300;color:var(--cream);line-height:1.1;margin-bottom:24px}
+.gal-intro p{color:rgba(245,240,232,.6);font-size:14px;line-height:1.9;margin-bottom:14px}
+.gal-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:3px}
+.g-item{overflow:hidden;position:relative}
+.g-item.tall{grid-row:span 2}
+.g-item.wide{grid-column:span 2}
+.g-item img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s ease;min-height:260px}
+.g-item:hover img{transform:scale(1.05)}
+.g-cap{position:absolute;bottom:0;left:0;right:0;padding:18px;background:linear-gradient(to top,rgba(26,18,8,.85),transparent);opacity:0;transition:opacity .3s}
+.g-item:hover .g-cap{opacity:1}
+.g-cap p{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--cream)}
+.gal-statement{padding:90px 60px;background:var(--mid);display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+.gal-statement h2{font-family:'Cormorant Garamond',serif;font-size:clamp(26px,3.5vw,44px);font-weight:300;line-height:1.15;margin-bottom:24px}
+.gal-statement p{color:var(--muted);font-size:14px;line-height:1.9;margin-bottom:14px}
+.gal-quote{font-family:'Cormorant Garamond',serif;font-size:clamp(20px,2.5vw,30px);font-style:italic;color:var(--text);line-height:1.5;border-left:2px solid var(--gold);padding-left:28px}
+.gal-quote cite{font-size:11px;letter-spacing:.15em;text-transform:uppercase;font-style:normal;color:var(--muted);display:block;margin-top:16px}
+.gal-visit{background:var(--deep);padding:80px 60px;display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+.gal-visit h2{font-family:'Cormorant Garamond',serif;font-size:clamp(26px,3.5vw,44px);font-weight:300;color:var(--cream);margin-bottom:24px}
+.gal-visit p{color:rgba(245,240,232,.6);font-size:14px;line-height:1.9;margin-bottom:14px}
+.visit-info{display:flex;flex-direction:column;gap:20px}
+.visit-row h4{font-size:9px;letter-spacing:.25em;text-transform:uppercase;color:var(--gold);margin-bottom:6px}
+.visit-row p{color:rgba(245,240,232,.6);font-size:14px;line-height:1.8}
+@media(max-width:900px){
+  .gal-grid{grid-template-columns:1fr 1fr}.g-item.wide{grid-column:span 1}.g-item.tall{grid-row:span 1}
+  .gal-intro,.gal-statement,.gal-visit{padding:64px 24px}
+  .gal-statement,.gal-visit{grid-template-columns:1fr;gap:40px}
+}
+</style>
+</head>
+<body>
+<nav>
+  <a class="nav-logo" href="index.html"><img src="files/iicdcenterlogo.jpg" alt="IICD"></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li>
+    <li><a href="the-space.html">The Space</a></li><li><a href="artist-residency.html">Residency</a></li>
+    <li><a href="exhibitions.html">Exhibitions</a></li><li><a href="the-gallery.html" class="active">Gallery</a></li>
+    <li><a href="abuja-open-house-2022.html">Open House 2022</a></li><li><a href="abuja-open-house-2019.html">Open House 2019</a></li>
+    <li><a href="past-events.html">Past Events</a></li><li><a href="coming-events.html">Coming Events</a></li>
+    <li><a href="blog.html">Blog</a></li><li><a href="contact.html">Contact</a></li>
+  </ul>
+  <div class="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></div>
+</nav>
+<div class="mobile-nav" id="mobileNav">
+  <a href="index.html" onclick="closeMenu()">Home</a><a href="about.html" onclick="closeMenu()">About</a>
+  <a href="the-space.html" onclick="closeMenu()">The Space</a><a href="artist-residency.html" onclick="closeMenu()">Residency</a>
+  <a href="exhibitions.html" onclick="closeMenu()">Exhibitions</a><a href="the-gallery.html" onclick="closeMenu()">Gallery</a>
+  <a href="abuja-open-house-2022.html" onclick="closeMenu()">Open House 2022</a><a href="abuja-open-house-2019.html" onclick="closeMenu()">Open House 2019</a>
+  <a href="past-events.html" onclick="closeMenu()">Past Events</a><a href="coming-events.html" onclick="closeMenu()">Coming Events</a>
+  <a href="blog.html" onclick="closeMenu()">Blog</a><a href="contact.html" onclick="closeMenu()">Contact</a>
+</div>
+
+<div class="page-hero">
+  <div class="page-hero-bg" style="background-image:url('files/inside-out.jpg');"></div>
+  <div class="page-hero-content">
+    <p class="page-hero-eyebrow">IICD Centre, Maitama</p>
+    <h1>The <em>Gallery</em></h1>
+  </div>
+</div>
+
+<div class="gal-intro">
+  <div class="gal-intro-inner">
+    <span class="section-label">Our Space</span>
+    <h2>A Home for Contemporary Creative Work</h2>
+    <p>The IICD gallery is a dedicated exhibition space in the heart of Maitama, Abuja. Since 2010, it has hosted solo exhibitions, group shows, residency presentations, and collaborative programmes — featuring artists from Nigeria and across the world.</p>
+    <p>The gallery operates as a white-cube space adaptable to paintings, sculpture, photography, installation, and mixed media. It serves as the primary exhibition venue for IICD's residency programme and is available for hire by artists, curators, and institutions.</p>
+    <p>Our programming is driven by a commitment to art that has something to say — works that engage with real ideas, provoke conversation, and contribute to the development of the Abuja creative scene as a distinct cultural identity.</p>
+  </div>
+</div>
+
+<div class="gal-grid">
+  <div class="g-item wide" style="aspect-ratio:21/9;">
+    <img src="files/inside-out.jpg" alt="IICD Gallery Interior">
+    <div class="g-cap"><p>Gallery Interior — IICD Centre, Maitama, Abuja</p></div>
+  </div>
+  <div class="g-item tall">
+    <img src="files/POSTERMARCH28.jpg" alt="March 2019 Programme" style="min-height:500px;">
+    <div class="g-cap"><p>March 2019 Programme</p></div>
+  </div>
+  <div class="g-item">
+    <img src="files/abujaOPENhouse+2022BANNER.jpg" alt="Open House 2022">
+    <div class="g-cap"><p>Abuja Open House 2022</p></div>
+  </div>
+  <div class="g-item">
+    <img src="files/ABUJAOPENHOUSEWEBBANNER3.jpg" alt="Open House 2019">
+    <div class="g-cap"><p>Abuja Open House 2019</p></div>
+  </div>
+  <div class="g-item">
+    <img src="files/10TH+ANNIVERSARY3.jpg" alt="10th Anniversary Exhibition">
+    <div class="g-cap"><p>10th Anniversary Exhibition</p></div>
+  </div>
+  <div class="g-item">
+    <img src="files/20617045_10155647708694851_729990303113732469_o.jpg" alt="Cultural Exchange">
+    <div class="g-cap"><p>Cultural Exchange Programme</p></div>
+  </div>
+  <div class="g-item">
+    <img src="files/poster4.jpg" alt="IICD Exhibition">
+    <div class="g-cap"><p>Gallery Programme</p></div>
+  </div>
+  <div class="g-item">
+    <img src="files/abujaOPENhouse+2022BANNER(1).jpg" alt="Open House 2022">
+    <div class="g-cap"><p>Open House 2022 — Programme</p></div>
+  </div>
+  <div class="g-item">
+    <img src="files/iicdcenterlogo.jpg" alt="IICD" style="object-fit:contain;background:var(--deep);padding:32px;">
+    <div class="g-cap"><p>IICD Centre, Est. 2010</p></div>
+  </div>
+</div>
+
+<section class="gal-statement">
+  <div>
+    <span class="section-label">Curatorial Vision</span>
+    <h2>Art That Has Something to Say</h2>
+    <p>IICD's gallery programming is guided by the belief that art is more than passive decoration. We curate exhibitions that engage with real ideas — migration, environment, identity, time, and social change — and that create space for conversation across cultural boundaries.</p>
+    <p>As Chief Curator Nduwhite Ndubuisi Ahanonu has noted, IICD works from the Kandinsky principle: the artist must have something to say. Mastery over form is not the goal — the goal is adapting form to inner meaning.</p>
+    <p>The gallery has shown artists at all career stages, from PhD scholars and established painters to emerging voices fresh from residency. We are committed to supporting Abuja-based artists and to bringing international perspectives into conversation with local creative practice.</p>
+    <a href="contact.html" class="btn btn-dark" style="margin-top:16px;">Submit an Exhibition Proposal</a>
+  </div>
+  <div class="gal-quote">
+    "The artist must have something to say, for mastery over form is not his goal but rather the adapting of form to its inner meaning."
+    <cite>— Wassily Kandinsky<br>Adopted as a curatorial principle at IICD</cite>
+  </div>
+</section>
+
+<section class="gal-visit">
+  <div>
+    <span class="section-label">Plan Your Visit</span>
+    <h2>Come to the Gallery</h2>
+    <p>The IICD gallery is free to visit during opening hours. We welcome individuals, groups, students, and school parties. Private tours and educational visits can be arranged on request.</p>
+    <p>Check our social media channels — Instagram @iicdcenter and Facebook /iicdcenter — for current exhibition details and opening events.</p>
+    <a href="contact.html" class="btn" style="margin-top:16px;">Get in Touch</a>
+  </div>
+  <div class="visit-info">
+    <div class="visit-row"><h4>Address</h4><p>3 Kachi Close, Area 3<br>Garki, Abuja, Nigeria</p></div>
+    <div class="visit-row"><h4>Opening Hours</h4><p>Monday – Saturday: 9AM – 6:30PM<br>Sunday &amp; Public Holidays: By Appointment</p></div>
+    <div class="visit-row"><h4>Admission</h4><p>Free entry to gallery exhibitions</p></div>
+    <div class="visit-row"><h4>Contact</h4><p><a href="tel:+2348097501995" style="color:var(--gold);">08097501995</a><br><a href="mailto:info@iicd.org" style="color:var(--gold);">info@iicd.org</a></p></div>
+  </div>
+</section>
+
+<footer>
+  <p>© Copyright IICD. All Rights Reserved. Designed by iBot.</p>
+  <div class="footer-links">
+    <a href="https://instagram.com/iicdcenter" target="_blank">Instagram</a>
+    <a href="https://facebook.com/iicdcenter" target="_blank">Facebook</a>
+    <a href="contact.html">Contact</a>
+  </div>
+  <div class="footer-logo"><img src="files/iicdcenterlogo.jpg" alt="IICD"></div>
+</footer>
+<script src="shared.js"></script>
+</body>
+</html>

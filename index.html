@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IICD — International Institute for Creative Development, Abuja</title>
+<meta name="description" content="IICD is a capacity building centre and multi-disciplinary experimental art space in Maitama, Abuja, advancing cultural diplomacy and creative development.">
+<link rel="stylesheet" href="shared.css">
+<style>
+#hero{height:100vh;min-height:600px;position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center}
+.hero-bg{position:absolute;inset:0;background-image:url('files/inside-out.jpg');background-size:cover;background-position:center;filter:brightness(.32);transform:scale(1.06);animation:slowZoom 18s ease-out forwards}
+@keyframes slowZoom{to{transform:scale(1)}}
+.hero-content{position:relative;text-align:center;padding:0 24px;animation:fadeUp 1.4s ease both}
+@keyframes fadeUp{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:translateY(0)}}
+.hero-eyebrow{font-size:10px;letter-spacing:.3em;text-transform:uppercase;color:var(--gold);margin-bottom:20px}
+.hero-title{font-family:'Cormorant Garamond',serif;font-size:clamp(38px,7.5vw,94px);font-weight:300;line-height:1.03;color:var(--cream)}
+.hero-title em{font-style:italic;color:var(--gold)}
+.hero-sub{margin-top:28px;font-size:12px;letter-spacing:.1em;color:rgba(245,240,232,.5);max-width:480px;margin-left:auto;margin-right:auto;line-height:1.9}
+.hero-ctas{margin-top:40px;display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+.scroll-hint{position:absolute;bottom:36px;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:8px}
+.scroll-hint span{font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:rgba(245,240,232,.35)}
+.scroll-line{width:1px;height:48px;background:linear-gradient(to bottom,rgba(201,168,76,.6),transparent);animation:pulse 2s ease-in-out infinite}
+@keyframes pulse{0%,100%{opacity:.4}50%{opacity:1}}
+
+.home-intro{display:grid;grid-template-columns:1fr 1fr;min-height:70vh}
+.home-intro-img{overflow:hidden}
+.home-intro-img img{width:100%;height:100%;object-fit:cover;display:block;transition:transform 5s ease}
+.home-intro-img:hover img{transform:scale(1.04)}
+.home-intro-text{background:var(--deep);padding:80px 64px;display:flex;flex-direction:column;justify-content:center}
+.home-intro-text h2{font-family:'Cormorant Garamond',serif;font-size:clamp(28px,3.5vw,46px);font-weight:300;color:var(--cream);line-height:1.15;margin-bottom:24px}
+.home-intro-text p{color:rgba(245,240,232,.65);font-size:14px;line-height:1.9;margin-bottom:14px}
+.intro-stats{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:40px;border-top:1px solid rgba(255,255,255,.07);padding-top:36px}
+.stat-num{font-family:'Cormorant Garamond',serif;font-size:44px;font-weight:300;color:var(--gold);line-height:1}
+.stat-label{font-size:10px;letter-spacing:.15em;text-transform:uppercase;color:rgba(245,240,232,.4);margin-top:6px}
+
+.home-pillars{padding:90px 60px;background:var(--mid)}
+.pillars-header{text-align:center;margin-bottom:60px}
+.pillars-header h2{font-family:'Cormorant Garamond',serif;font-size:clamp(28px,4vw,50px);font-weight:300}
+.pillars-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;max-width:1200px;margin:0 auto}
+.pillar-card{background:var(--deep);padding:48px 36px;position:relative;overflow:hidden;transition:transform .3s}
+.pillar-card:hover{transform:translateY(-4px)}
+.pillar-num{font-family:'Cormorant Garamond',serif;font-size:72px;font-weight:300;color:rgba(201,168,76,.08);position:absolute;top:20px;right:24px;line-height:1}
+.pillar-card h3{font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:300;color:var(--cream);margin:16px 0 14px;line-height:1.2}
+.pillar-card p{font-size:13px;color:rgba(245,240,232,.5);line-height:1.8}
+.pillar-card a{display:inline-block;margin-top:20px;font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);text-decoration:none;border-bottom:1px solid rgba(201,168,76,.3);padding-bottom:2px;transition:border-color .2s}
+.pillar-card a:hover{border-color:var(--gold)}
+
+.home-events{padding:90px 60px;background:var(--cream)}
+.home-events h2{font-family:'Cormorant Garamond',serif;font-size:clamp(28px,4vw,50px);font-weight:300;text-align:center;margin-bottom:56px}
+.events-strip{display:grid;grid-template-columns:repeat(3,1fr);gap:3px;max-width:1200px;margin:0 auto}
+.event-thumb{position:relative;overflow:hidden;aspect-ratio:4/3;display:block;text-decoration:none}
+.event-thumb img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s}
+.event-thumb:hover img{transform:scale(1.06)}
+.event-thumb-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(26,18,8,.88) 0%,transparent 55%);display:flex;flex-direction:column;justify-content:flex-end;padding:24px}
+.event-thumb-tag{font-size:8px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:6px}
+.event-thumb-title{font-family:'Cormorant Garamond',serif;font-size:20px;color:var(--cream);font-weight:300;line-height:1.2}
+
+.home-quote{background:var(--deep);padding:90px 60px;text-align:center}
+.home-quote blockquote{font-family:'Cormorant Garamond',serif;font-size:clamp(20px,3vw,36px);font-weight:300;font-style:italic;color:var(--cream);max-width:860px;margin:0 auto;line-height:1.5}
+.home-quote cite{display:block;margin-top:28px;font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:rgba(201,168,76,.7);font-style:normal}
+
+.home-badges{padding:60px;display:flex;align-items:center;justify-content:center;gap:60px;background:var(--mid);flex-wrap:wrap}
+.home-badges img{height:52px;opacity:.55;filter:grayscale(1);transition:opacity .3s,filter .3s}
+.home-badges img:hover{opacity:1;filter:none}
+
+@media(max-width:900px){
+  .home-intro{grid-template-columns:1fr}.home-intro-img{aspect-ratio:4/3}.home-intro-text{padding:56px 24px}
+  .pillars-grid{grid-template-columns:1fr}.events-strip{grid-template-columns:1fr}
+  .home-pillars,.home-events,.home-quote{padding:64px 24px}.home-badges{padding:40px 24px;gap:32px}
+}
+</style>
+</head>
+<body>
+<nav>
+  <a class="nav-logo" href="index.html"><img src="files/iicdcenterlogo.jpg" alt="IICD"></a>
+  <ul class="nav-links">
+    <li><a href="index.html" class="active">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="the-space.html">The Space</a></li>
+    <li><a href="artist-residency.html">Residency</a></li>
+    <li><a href="exhibitions.html">Exhibitions</a></li>
+    <li><a href="the-gallery.html">Gallery</a></li>
+    <li><a href="abuja-open-house-2022.html">Open House 2022</a></li>
+    <li><a href="abuja-open-house-2019.html">Open House 2019</a></li>
+    <li><a href="past-events.html">Past Events</a></li>
+    <li><a href="coming-events.html">Coming Events</a></li>
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <div class="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></div>
+</nav>
+<div class="mobile-nav" id="mobileNav">
+  <a href="index.html" onclick="closeMenu()">Home</a>
+  <a href="about.html" onclick="closeMenu()">About</a>
+  <a href="the-space.html" onclick="closeMenu()">The Space</a>
+  <a href="artist-residency.html" onclick="closeMenu()">Residency</a>
+  <a href="exhibitions.html" onclick="closeMenu()">Exhibitions</a>
+  <a href="the-gallery.html" onclick="closeMenu()">Gallery</a>
+  <a href="abuja-open-house-2022.html" onclick="closeMenu()">Open House 2022</a>
+  <a href="abuja-open-house-2019.html" onclick="closeMenu()">Open House 2019</a>
+  <a href="past-events.html" onclick="closeMenu()">Past Events</a>
+  <a href="coming-events.html" onclick="closeMenu()">Coming Events</a>
+  <a href="blog.html" onclick="closeMenu()">Blog</a>
+  <a href="contact.html" onclick="closeMenu()">Contact</a>
+</div>
+
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-content">
+    <p class="hero-eyebrow">Abuja, Nigeria · Founded 2010</p>
+    <h1 class="hero-title">International Institute<br>for <em>Creative</em><br>Development</h1>
+    <p class="hero-sub">A multi-disciplinary experimental art space advancing cultural diplomacy and social development through creative exchange</p>
+    <div class="hero-ctas">
+      <a href="about.html" class="btn">Discover IICD</a>
+      <a href="abuja-open-house-2022.html" class="btn btn-light">Open House</a>
+    </div>
+  </div>
+  <div class="scroll-hint"><span>Scroll</span><div class="scroll-line"></div></div>
+</section>
+
+<section class="home-intro">
+  <div class="home-intro-img"><img src="files/Abuja-City-Gate.jpg" alt="IICD Gallery Space"></div>
+  <div class="home-intro-text">
+    <span class="section-label">Who We Are</span>
+    <h2>Positioning Abuja as a Distinct Cultural Identity</h2>
+    <p>Founded in 2010 as a direct offshoot of the Ford Foundation mentorship programme, IICD has spent over a decade working to develop the Abuja art scene as a distinctive cultural force — dismantling the stereotype of the city as a soulless metropolis.</p>
+    <p>We operate as an open thematic experimental art space, infusing pedagogical and creative processes into the industry. From residencies and exhibitions to open houses and capacity building, everything we do serves one goal: helping artists establish their voice, connect their paths, and create new narratives.</p>
+    <div class="intro-stats">
+      <div><div class="stat-num">15+</div><div class="stat-label">Years Active</div></div>
+      <div><div class="stat-num">1500+</div><div class="stat-label">Open House Attendees</div></div>
+      <div><div class="stat-num">22+</div><div class="stat-label">Venues Activated</div></div>
+      <div><div class="stat-num">3</div><div class="stat-label">Open House Editions</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="home-pillars">
+  <div class="pillars-header">
+    <span class="section-label">What We Do</span>
+    <h2>Four Pillars of Creative Practice</h2>
+  </div>
+  <div class="pillars-grid">
+    <div class="pillar-card reveal">
+      <div class="pillar-num">01</div>
+      <span class="section-label">Programme</span>
+      <h3>Artist Residency</h3>
+      <p>Nigerian and international artists in residence at our Maitama centre — sharing experiences, building dialogues, and developing new work within a rigorous curatorial framework.</p>
+      <a href="artist-residency.html">Learn more →</a>
+    </div>
+    <div class="pillar-card reveal">
+      <div class="pillar-num">02</div>
+      <span class="section-label">Festival</span>
+      <h3>Abuja Open House</h3>
+      <p>Abuja's largest art festival — animating over 22 venues across four days, bridging the gap between Abuja's creative community, galleries, and the general public.</p>
+      <a href="abuja-open-house-2022.html">Explore the festival →</a>
+    </div>
+    <div class="pillar-card reveal">
+      <div class="pillar-num">03</div>
+      <span class="section-label">Space</span>
+      <h3>Gallery &amp; Studio</h3>
+      <p>Our gallery in Maitama is a dedicated space for solo and group exhibitions, workshops, screenings, and curatorial classes — open to the public and available for hire.</p>
+      <a href="the-gallery.html">See the gallery →</a>
+    </div>
+  </div>
+</section>
+
+<section class="home-events">
+  <span class="section-label" style="display:block;text-align:center;">Events</span>
+  <h2>Recent Programmes</h2>
+  <div class="events-strip">
+    <a href="abuja-open-house-2022.html" class="event-thumb">
+      <img src="files/abujaOPENhouse+2022BANNER.jpg" alt="Abuja Open House 2022">
+      <div class="event-thumb-overlay"><p class="event-thumb-tag">2022 · Festival</p><p class="event-thumb-title">Abuja Open House 2022</p></div>
+    </a>
+    <a href="abuja-open-house-2019.html" class="event-thumb">
+      <img src="files/ABUJAOPENHOUSEWEBBANNER3.jpg" alt="Abuja Open House 2019">
+      <div class="event-thumb-overlay"><p class="event-thumb-tag">2019 · Festival</p><p class="event-thumb-title">Abuja Open House 2019</p></div>
+    </a>
+    <a href="exhibitions.html" class="event-thumb">
+      <img src="files/poster4.jpg" alt="Exhibitions">
+      <div class="event-thumb-overlay"><p class="event-thumb-tag">Ongoing · Gallery</p><p class="event-thumb-title">Exhibitions Programme</p></div>
+    </a>
+  </div>
+</section>
+
+<section class="home-quote">
+  <blockquote>"Abuja may appear soulless from afar, as many have described it in the past. Deconstructing this psychological stereotype — and more — is part of the reason IICD has a distinct modus operandi, as an open thematic experimental art space that infuses pedagogical and creative processes in the industry."</blockquote>
+  <cite>— Nduwhite Ndubuisi Ahanonu, Founder &amp; Director, IICD</cite>
+</section>
+
+<div class="home-badges">
+  <img src="files/alliance-member-logo-full-color-jpg.jpg" alt="Alliance Member">
+  <img src="files/iicdcenterlogo.jpg" alt="IICD Logo">
+</div>
+
+<footer>
+  <p>© Copyright IICD. All Rights Reserved. Designed by iBot.</p>
+  <div class="footer-links">
+    <a href="https://instagram.com/iicdcenter" target="_blank">Instagram</a>
+    <a href="https://facebook.com/iicdcenter" target="_blank">Facebook</a>
+    <a href="contact.html">Contact</a>
+  </div>
+  <div class="footer-logo"><img src="files/iicdcenterlogo.jpg" alt="IICD"></div>
+</footer>
+<script src="shared.js"></script>
+</body>
+</html>

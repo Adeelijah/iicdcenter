@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Space — IICD Abuja</title>
+<meta name="description" content="IICD's multi-disciplinary art space in Area 3, Garki, Abuja — studios, gallery, and event venue available for hire.">
+<link rel="stylesheet" href="shared.css">
+<style>
+.space-intro{display:grid;grid-template-columns:1fr 1fr;min-height:75vh}
+.space-intro-img{overflow:hidden}
+.space-intro-img img{width:100%;height:100%;object-fit:cover;display:block;transition:transform 6s ease}
+.space-intro-img:hover img{transform:scale(1.04)}
+.space-intro-text{background:var(--terracotta);padding:80px 64px;display:flex;flex-direction:column;justify-content:center}
+.space-intro-text .section-label{color:rgba(255,255,255,.6)}
+.space-intro-text h2{font-family:'Cormorant Garamond',serif;font-size:clamp(28px,3.5vw,46px);font-weight:300;color:white;line-height:1.15;margin-bottom:24px}
+.space-intro-text p{color:rgba(255,255,255,.8);font-size:14px;line-height:1.9;margin-bottom:14px}
+.spaces-section{padding:90px 60px;background:var(--mid)}
+.spaces-section h2{font-family:'Cormorant Garamond',serif;font-size:clamp(28px,4vw,48px);font-weight:300;text-align:center;margin-bottom:60px}
+.spaces-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;max-width:1200px;margin:0 auto}
+.space-card{background:var(--deep);padding:48px 36px}
+.space-card-num{font-family:'Cormorant Garamond',serif;font-size:52px;color:rgba(201,168,76,.15);line-height:1;margin-bottom:16px}
+.space-card h3{font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:300;color:var(--cream);margin-bottom:14px}
+.space-card p{font-size:13px;color:rgba(245,240,232,.55);line-height:1.85}
+.hire-section{padding:90px 60px;background:var(--deep)}
+.hire-layout{max-width:1000px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start}
+.hire-text h2{font-family:'Cormorant Garamond',serif;font-size:clamp(28px,4vw,46px);font-weight:300;color:var(--cream);line-height:1.1;margin-bottom:24px}
+.hire-text p{color:rgba(245,240,232,.6);font-size:14px;line-height:1.9;margin-bottom:14px}
+.hire-info{border:1px solid rgba(201,168,76,.15);padding:40px}
+.hire-info h3{font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:300;color:var(--cream);margin-bottom:24px}
+.hire-row{display:flex;justify-content:space-between;align-items:flex-start;padding:12px 0;border-bottom:1px solid rgba(255,255,255,.06);font-size:13px;gap:16px}
+.hire-row .lbl{color:rgba(245,240,232,.4);letter-spacing:.08em;text-transform:uppercase;font-size:9px;flex-shrink:0;margin-top:2px}
+.hire-row .val{color:var(--cream);text-align:right}
+.testimonial{padding:80px 60px;background:var(--cream);text-align:center}
+.testimonial blockquote{font-family:'Cormorant Garamond',serif;font-size:clamp(20px,3vw,34px);font-weight:300;font-style:italic;max-width:800px;margin:0 auto;line-height:1.5;color:var(--text)}
+.testimonial cite{display:block;margin-top:24px;font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);font-style:normal}
+@media(max-width:900px){
+  .space-intro{grid-template-columns:1fr}.space-intro-img{aspect-ratio:4/3}.space-intro-text{padding:56px 24px}
+  .spaces-cards{grid-template-columns:1fr}.spaces-section,.hire-section,.testimonial{padding:64px 24px}
+  .hire-layout{grid-template-columns:1fr;gap:40px}
+}
+</style>
+</head>
+<body>
+<nav>
+  <a class="nav-logo" href="index.html"><img src="files/iicdcenterlogo.jpg" alt="IICD"></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li>
+    <li><a href="the-space.html" class="active">The Space</a></li><li><a href="artist-residency.html">Residency</a></li>
+    <li><a href="exhibitions.html">Exhibitions</a></li><li><a href="the-gallery.html">Gallery</a></li>
+    <li><a href="abuja-open-house-2022.html">Open House 2022</a></li><li><a href="abuja-open-house-2019.html">Open House 2019</a></li>
+    <li><a href="past-events.html">Past Events</a></li><li><a href="coming-events.html">Coming Events</a></li>
+    <li><a href="blog.html">Blog</a></li><li><a href="contact.html">Contact</a></li>
+  </ul>
+  <div class="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></div>
+</nav>
+<div class="mobile-nav" id="mobileNav">
+  <a href="index.html" onclick="closeMenu()">Home</a><a href="about.html" onclick="closeMenu()">About</a>
+  <a href="the-space.html" onclick="closeMenu()">The Space</a><a href="artist-residency.html" onclick="closeMenu()">Residency</a>
+  <a href="exhibitions.html" onclick="closeMenu()">Exhibitions</a><a href="the-gallery.html" onclick="closeMenu()">Gallery</a>
+  <a href="abuja-open-house-2022.html" onclick="closeMenu()">Open House 2022</a><a href="abuja-open-house-2019.html" onclick="closeMenu()">Open House 2019</a>
+  <a href="past-events.html" onclick="closeMenu()">Past Events</a><a href="coming-events.html" onclick="closeMenu()">Coming Events</a>
+  <a href="blog.html" onclick="closeMenu()">Blog</a><a href="contact.html" onclick="closeMenu()">Contact</a>
+</div>
+
+<div class="page-hero">
+  <div class="page-hero-bg" style="background-image:url('files/inside-out.jpg');"></div>
+  <div class="page-hero-content">
+    <p class="page-hero-eyebrow">Garki, Abuja</p>
+    <h1>The <em>Space</em></h1>
+  </div>
+</div>
+
+<div class="space-intro">
+  <div class="space-intro-img"><img src="files/the-space.jpg" alt="IICD Gallery Interior"></div>
+  <div class="space-intro-text">
+    <span class="section-label">Our Centre</span>
+    <h2>A Dedicated Space for Creative Practice</h2>
+    <p>Located at 3 kachi Close, Area 3, Garki, Abuja, the IICD Centre is a purpose-built creative facility designed to support the full spectrum of artistic activity — from intimate studio work to large-scale public exhibitions and events.</p>
+    <p>The space is home to our gallery, artist studios, workshop rooms, and a curated resource library. It is where residency artists live and work, where exhibitions open, where workshops run, and where Abuja's creative community comes together.</p>
+    <p>We welcome artists, curators, institutions, and members of the public. The space is available for hire for events, exhibitions, workshops, and private functions.</p>
+    <a href="contact.html" class="btn btn-light" style="margin-top:32px;">Enquire About the Space</a>
+  </div>
+</div>
+
+<section class="spaces-section">
+  <span class="section-label" style="display:block;text-align:center;">Facilities</span>
+  <h2>What's Inside</h2>
+  <div class="spaces-cards">
+    <div class="space-card reveal">
+      <div class="space-card-num">01</div>
+      <h3>Exhibition Gallery</h3>
+      <p>A dedicated white-cube gallery space hosting solo and group exhibitions throughout the year. The gallery has shown work by Nigerian and international artists, with a programme curated by IICD's team and invited curators. Adaptable for painting, sculpture, photography, installation, and mixed media.</p>
+    </div>
+    <div class="space-card reveal">
+      <div class="space-card-num">02</div>
+      <h3>Artist Studios</h3>
+      <p>Dedicated studio spaces used by our resident artists during the IICD residency programme. Studios are equipped for painting, sculpture, mixed media, and installation work. Residents have full access to studio facilities during their residency period.</p>
+    </div>
+    <div class="space-card reveal">
+      <div class="space-card-num">03</div>
+      <h3>Workshop Room</h3>
+      <p>A flexible multi-use space for workshops, artist talks, curatorial classes, screenings, and community events. Has hosted sessions facilitated by leading artists, curators, and academics from Nigeria and abroad, including portfolio reviews and curatorial training.</p>
+    </div>
+    <div class="space-card reveal">
+      <div class="space-card-num">04</div>
+      <h3>Resource Library</h3>
+      <p>A curated collection of art books, exhibition catalogues, journals, and reference materials available to residents, associates, and visitors. A unique research resource for contemporary art practice in Abuja — described by programme participants as invaluable for curatorial development.</p>
+    </div>
+    <div class="space-card reveal">
+      <div class="space-card-num">05</div>
+      <h3>Event Venue</h3>
+      <p>The full IICD Centre — including outdoor areas — is available as an event venue for cultural events, private views, receptions, launches, and institutional gatherings. Has hosted events for the US Embassy, Institut Français, and numerous Abuja cultural organisations.</p>
+    </div>
+    <div class="space-card reveal">
+      <div class="space-card-num">06</div>
+      <h3>Curatorial Programme</h3>
+      <p>IICD runs structured curatorial training for emerging curators and cultural managers, offering rigorous learning, mentorship, and real-world practice. "A one-of-a-kind space for any growing curator, providing the kind of rigorous learning, development, and kindness that are so important." — Aisha Aliyu-Bima, Institut Français Curatorial Laureate.</p>
+    </div>
+  </div>
+</section>
+
+<section class="hire-section">
+  <div class="hire-layout">
+    <div class="hire-text">
+      <span class="section-label">Hire &amp; Access</span>
+      <h2>Use the Space</h2>
+      <p>The IICD Centre is available for hire by artists, institutions, companies, and individuals. Whether you need a gallery for an exhibition, a room for a workshop, or a full venue for a private event, we can accommodate you.</p>
+      <p>We prioritise bookings that align with our mission of supporting creative development and cultural exchange in Abuja. We particularly encourage proposals from artists and curators who wish to exhibit at IICD.</p>
+      <p>Past hirers include embassy cultural departments, private collectors hosting viewings, and non-profit organisations running training programmes. Contact us to discuss your requirements and available dates.</p>
+      <a href="contact.html" class="btn" style="margin-top:20px;">Enquire Now</a>
+    </div>
+    <div class="hire-info">
+      <h3>Practical Information</h3>
+      <div class="hire-row"><span class="lbl">Address</span><span class="val">3 Kachi Close, Area 3, Garki, Abuja</span></div>
+      <div class="hire-row"><span class="lbl">Open Hours</span><span class="val">Monday–Saturday: 9AM–6:30PM</span></div>
+      <div class="hire-row"><span class="lbl">Sunday</span><span class="val">By Appointment Only</span></div>
+      <div class="hire-row"><span class="lbl">Phone</span><span class="val">08097501995 / 08034056009</span></div>
+      <div class="hire-row"><span class="lbl">Email</span><span class="val">info@iicd.org</span></div>
+      <div class="hire-row"><span class="lbl">Hire Enquiries</span><span class="val">nduwhite@gmail.com</span></div>
+      <div class="hire-row"><span class="lbl">District</span><span class="val">Garki, Abuja FCT, Nigeria</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="testimonial">
+  <span class="section-label">From Our Community</span>
+  <blockquote>"The IICD Centre is a one-of-a-kind space for any growing curator, providing the kind of rigorous learning, development, and kindness that are so important for a budding curator."</blockquote>
+  <cite>— Aisha Aliyu-Bima, Institut Français Curatorial Laureate</cite>
+</section>
+
+<footer>
+  <p>© Copyright IICD. All Rights Reserved. Designed by iBot.</p>
+  <div class="footer-links">
+    <a href="https://instagram.com/iicdcenter" target="_blank">Instagram</a>
+    <a href="https://facebook.com/iicdcenter" target="_blank">Facebook</a>
+    <a href="contact.html">Contact</a>
+  </div>
+  <div class="footer-logo"><img src="files/iicdcenterlogo.jpg" alt="IICD"></div>
+</footer>
+<script src="shared.js"></script>
+</body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About — IICD Abuja</title>
+<meta name="description" content="IICD is a capacity building centre founded in 2010 in Abuja, Nigeria, focused on cultural diplomacy and creative development.">
+<link rel="stylesheet" href="shared.css">
+<style>
+.about-body{display:grid;grid-template-columns:1fr 1fr;min-height:80vh}
+.about-body-img{overflow:hidden;position:sticky;top:64px;height:calc(100vh - 64px)}
+.about-body-img img{width:100%;height:100%;object-fit:cover;display:block}
+.about-body-text{padding:80px 64px}
+.about-body-text h2{font-family:'Cormorant Garamond',serif;font-size:clamp(26px,3vw,40px);font-weight:300;line-height:1.15;margin-bottom:18px;margin-top:48px}
+.about-body-text h2:first-of-type{margin-top:0}
+.about-body-text p{color:var(--muted);font-size:14px;line-height:1.9;margin-bottom:14px}
+.about-body-text strong{color:var(--text);font-weight:600}
+.founder-block{background:var(--deep);padding:48px;margin-top:52px}
+.founder-block h3{font-family:'Cormorant Garamond',serif;font-size:26px;font-weight:300;color:var(--cream);margin-bottom:4px}
+.founder-title{font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:18px;display:block}
+.founder-block p{color:rgba(245,240,232,.6);font-size:14px;line-height:1.9;margin-bottom:12px}
+.timeline{padding:90px 60px;background:var(--mid)}
+.timeline h2{font-family:'Cormorant Garamond',serif;font-size:clamp(28px,4vw,48px);font-weight:300;text-align:center;margin-bottom:60px}
+.timeline-list{max-width:720px;margin:0 auto;position:relative}
+.timeline-list::before{content:'';position:absolute;left:16px;top:0;bottom:0;width:1px;background:rgba(201,168,76,.2)}
+.timeline-item{display:flex;gap:36px;margin-bottom:44px;padding-left:48px;position:relative}
+.timeline-item::before{content:'';position:absolute;left:10px;top:6px;width:13px;height:13px;border:1px solid var(--gold);background:var(--mid);border-radius:50%}
+.timeline-year{font-family:'Cormorant Garamond',serif;font-size:22px;color:var(--gold);font-weight:300;flex-shrink:0;min-width:50px}
+.timeline-info h4{font-size:14px;font-weight:600;color:var(--text);margin-bottom:6px}
+.timeline-info p{font-size:13px;color:var(--muted);line-height:1.8}
+.partners-section{padding:80px 60px;background:var(--deep);text-align:center}
+.partners-section h2{font-family:'Cormorant Garamond',serif;font-size:clamp(26px,4vw,44px);font-weight:300;color:var(--cream);margin-bottom:14px}
+.partners-section > p{color:rgba(245,240,232,.5);font-size:14px;margin-bottom:44px}
+.partners-grid{display:flex;flex-wrap:wrap;justify-content:center;gap:16px;max-width:800px;margin:0 auto}
+.partner-tag{border:1px solid rgba(201,168,76,.18);padding:10px 20px;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:rgba(245,240,232,.45)}
+@media(max-width:900px){
+  .about-body{grid-template-columns:1fr}.about-body-img{height:60vw;position:static}
+  .about-body-text{padding:48px 24px}.founder-block{padding:36px 24px}
+  .timeline,.partners-section{padding:64px 24px}
+}
+</style>
+</head>
+<body>
+<nav>
+  <a class="nav-logo" href="index.html"><img src="files/iicdcenterlogo.jpg" alt="IICD"></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li><li><a href="about.html" class="active">About</a></li>
+    <li><a href="the-space.html">The Space</a></li><li><a href="artist-residency.html">Residency</a></li>
+    <li><a href="exhibitions.html">Exhibitions</a></li><li><a href="the-gallery.html">Gallery</a></li>
+    <li><a href="abuja-open-house-2022.html">Open House 2022</a></li><li><a href="abuja-open-house-2019.html">Open House 2019</a></li>
+    <li><a href="past-events.html">Past Events</a></li><li><a href="coming-events.html">Coming Events</a></li>
+    <li><a href="blog.html">Blog</a></li><li><a href="contact.html">Contact</a></li>
+  </ul>
+  <div class="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></div>
+</nav>
+<div class="mobile-nav" id="mobileNav">
+  <a href="index.html" onclick="closeMenu()">Home</a><a href="about.html" onclick="closeMenu()">About</a>
+  <a href="the-space.html" onclick="closeMenu()">The Space</a><a href="artist-residency.html" onclick="closeMenu()">Residency</a>
+  <a href="exhibitions.html" onclick="closeMenu()">Exhibitions</a><a href="the-gallery.html" onclick="closeMenu()">Gallery</a>
+  <a href="abuja-open-house-2022.html" onclick="closeMenu()">Open House 2022</a><a href="abuja-open-house-2019.html" onclick="closeMenu()">Open House 2019</a>
+  <a href="past-events.html" onclick="closeMenu()">Past Events</a><a href="coming-events.html" onclick="closeMenu()">Coming Events</a>
+  <a href="blog.html" onclick="closeMenu()">Blog</a><a href="contact.html" onclick="closeMenu()">Contact</a>
+</div>
+
+<div class="page-hero">
+  <div class="page-hero-bg" style="background-image:url('files/10TH+ANNIVERSARY3.jpg');"></div>
+  <div class="page-hero-content">
+    <p class="page-hero-eyebrow">Our Story</p>
+    <h1>About <em>IICD</em></h1>
+  </div>
+</div>
+
+<div class="about-body">
+  <div class="about-body-img"><img src="files/Nduwhite-img.jpg" alt="IICD Centre Interior"></div>
+  <div class="about-body-text">
+    <span class="section-label">The Institute</span>
+    <h2>Who We Are</h2>
+    <p>The International Institute for Creative Development (IICD) is a capacity building centre that provides a sustainable creative database, advocacy, and technical assistance for creating and managing cultural exchange programmes that seek to advance cultural diplomacy and social development.</p>
+    <p>IICD Center is also a <strong>multi-disciplinary experimental art space</strong> that inspires a creative environment for open thematic expression within the context of contemporary art practice. Located at 4 Oguda Close, Off Lake Chad Crescent, Maitama, Abuja, the centre serves as a hub for artists, curators, cultural managers, and the wider creative community.</p>
+
+    <h2>Our Mission</h2>
+    <p>IICD's main objective is to help artists, within the framework of contemporary art practice, <strong>establish their voice, connect their paths, and create new narratives</strong>. We do this by fostering creative dialogues and interactions between Nigerian artists and resident foreign artists, provoking fresh debates and research opportunities in keeping with worldwide curatorial standards.</p>
+    <p>Deconstructing the stereotype of Abuja as a soulless metropolis has always been central to our work. Our distinct modus operandi — as an open thematic experimental art space that infuses pedagogical and creative processes into the industry — has repositioned Abuja's art scene as a distinctive cultural identity within Nigeria and internationally.</p>
+
+    <h2>Our Origins</h2>
+    <p>IICD was founded in 2010 by Nduwhite Ndubuisi Ahanonu and his late friend <strong>Harrison Ikibah</strong> — a direct offshoot of the Ford Foundation's mentorship programme to develop future cultural managers in Nigeria. The founding came shortly after Ahanonu returned from the 2010 Dakar Biennale, where he represented Nigeria with a fresh perspective on African contemporary art practice.</p>
+    <p>The pair began by initiating interventions in Abuja's art scene, which was then dominated almost exclusively by government parastatals and embassies. An influential encounter with British Council representatives opened new doors, and Ahanonu went on to study cultural diplomacy in Berlin in 2008, followed by courses in Venice, Dakar, Germany, France, and the United States.</p>
+
+    <div class="founder-block">
+      <h3>Nduwhite Ndubuisi Ahanonu</h3>
+      <span class="founder-title">Founder &amp; Director</span>
+      <p>An artist, curator, and art activist born in Imo State, Nigeria. Ahanonu represented Nigeria at the 2010 Dakar Biennale and participated in the Midbar International Artists' Residence in Tel Aviv (2006). His curatorial credentials include "Catalyst for Future Cities" at Transcorp Hilton, the Francophonie Festival performance at the Belgian Ambassador's residence (2017), Abuja Alive (2016), and co-curating the Finding the True North residency in Karlstad, Sweden.</p>
+      <p>He is an MFA candidate at Leuphana University, Lüneburg, Germany. He has held four solo exhibitions and participated in numerous group shows locally and internationally.</p>
+      <p style="margin-top:8px;"><a href="mailto:nduwhite@gmail.com" style="color:var(--gold);">nduwhite@gmail.com</a> &nbsp;·&nbsp; <a href="tel:+2348097501995" style="color:var(--gold);">08097501995</a></p>
+    </div>
+  </div>
+</div>
+
+<section class="timeline">
+  <h2>A Decade of Creative Work</h2>
+  <div class="timeline-list">
+    <div class="timeline-item reveal"><div class="timeline-year">2010</div><div class="timeline-info"><h4>IICD Founded</h4><p>Founded by Nduwhite Ndubuisi Ahanonu and Harrison Ikibah as an offshoot of the Ford Foundation mentorship programme, with a focus on cultural management and contemporary art in Abuja.</p></div></div>
+    <div class="timeline-item reveal"><div class="timeline-year">2015</div><div class="timeline-info"><h4>Catalyst for Future Cities</h4><p>Major group exhibition at Transcorp Hilton Hotel, Abuja — "Hilton at 30" — curated by Nduwhite Ndubuisi Ahanonu, marking IICD's growing reach into major institutional venues.</p></div></div>
+    <div class="timeline-item reveal"><div class="timeline-year">2016</div><div class="timeline-info"><h4>Abuja Alive &amp; Sweden Residency</h4><p>Curated the Abuja Alive group exhibition at the IICD Centre, and co-curated the Finding the True North artist residency in Karlstad, Sweden — an international exchange between Nigerian and Swedish artists.</p></div></div>
+    <div class="timeline-item reveal"><div class="timeline-year">2017</div><div class="timeline-info"><h4>Francophonie Festival Performance</h4><p>"Though I Don't Know You" — a performance held at the Belgian Ambassador's residence in Abuja in celebration of the Francophonie Festival. International residency programme also held in November 2017.</p></div></div>
+    <div class="timeline-item reveal"><div class="timeline-year">2018</div><div class="timeline-info"><h4>Upcycling: The New Economy &amp; 8th Anniversary</h4><p>A landmark three-week workshop on upcycling and sustainability, co-organised with the US Embassy, featuring 11 artists from across Nigeria. Portfolio review workshop with France-based curator Caroline Hancock in collaboration with Institut Français. IICD marked eight years with exhibitions and awards to partners.</p></div></div>
+    <div class="timeline-item reveal"><div class="timeline-year">2019</div><div class="timeline-info"><h4>Inaugural Abuja Open House &amp; 10th Anniversary</h4><p>The first edition of Abuja's largest art festival, October 25–27 — a four-day event animating creative spaces across the city, created in collaboration with the US Embassy. Coincided with IICD's 10th anniversary.</p></div></div>
+    <div class="timeline-item reveal"><div class="timeline-year">2022</div><div class="timeline-info"><h4>Abuja Open House 2nd Edition</h4><p>The second edition of the Open House animated over 22 locations in four days and attracted over 1,500 attendees. Upcycling Redefined workshop also held in collaboration with the US Embassy and Transcorp Hilton.</p></div></div>
+    <div class="timeline-item reveal"><div class="timeline-year">2023</div><div class="timeline-info"><h4>Abuja Open House 3rd Edition — Catalytic Synthesis</h4><p>The third edition of the Open House continued to grow the festival's footprint as the most significant visual arts event in Abuja, under the theme Catalytic Synthesis.</p></div></div>
+    <div class="timeline-item reveal"><div class="timeline-year">2024</div><div class="timeline-info"><h4>Reflection Time is Now</h4><p>Exhibition at the Atrium Gallery, Foreign Affairs Ministry, Central Business District, Abuja — a programme designed to provoke thought and discussion across cultural boundaries, capturing the Zeitgeist of a generation.</p></div></div>
+  </div>
+</section>
+
+<section class="partners-section">
+  <span class="section-label" style="color:var(--gold);">Collaborators &amp; Partners</span>
+  <h2>Built on Partnership</h2>
+  <p>IICD's work is made possible through sustained collaboration with embassies, cultural institutes, and private partners.</p>
+  <div class="partners-grid">
+    <div class="partner-tag">US Embassy Abuja</div>
+    <div class="partner-tag">Ford Foundation</div>
+    <div class="partner-tag">Institut Français</div>
+    <div class="partner-tag">British Council</div>
+    <div class="partner-tag">Transcorp Hilton Abuja</div>
+    <div class="partner-tag">AD Connect</div>
+    <div class="partner-tag">Alliance Member Network</div>
+    <div class="partner-tag">Mswitch</div>
+  </div>
+  <div style="margin-top:48px;">
+    <img src="files/alliance-member-logo-full-color-jpg.jpg" alt="Alliance Member" style="height:60px;opacity:.6;">
+  </div>
+</section>
+
+<footer>
+  <p>© Copyright IICD. All Rights Reserved. Designed by iBot.</p>
+  <div class="footer-links">
+    <a href="https://instagram.com/iicdcenter" target="_blank">Instagram</a>
+    <a href="https://facebook.com/iicdcenter" target="_blank">Facebook</a>
+    <a href="contact.html">Contact</a>
+  </div>
+  <div class="footer-logo"><img src="files/iicdcenterlogo.jpg" alt="IICD"></div>
+</footer>
+<script src="shared.js"></script>
+</body>
+</html>

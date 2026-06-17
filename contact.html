@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — IICD Abuja</title>
+<meta name="description" content="Contact IICD — 4 Oguda Close, Off Lake Chad Crescent, Maitama, Abuja. info@iicd.org · 08097501995. Open Monday–Saturday 9AM–6:30PM.">
+<link rel="stylesheet" href="shared.css">
+<style>
+.contact-split{display:grid;grid-template-columns:1fr 1fr;min-height:85vh}
+.contact-left{background:var(--deep);padding:90px 70px;display:flex;flex-direction:column;justify-content:center}
+.contact-left h2{font-family:'Cormorant Garamond',serif;font-size:clamp(28px,4vw,54px);font-weight:300;color:var(--cream);line-height:1.1;margin-bottom:48px}
+.c-block{margin-bottom:36px}
+.c-block h4{font-size:9px;letter-spacing:.28em;text-transform:uppercase;color:var(--gold);margin-bottom:12px}
+.c-block p,.c-block a{font-size:14px;color:rgba(245,240,232,.6);line-height:2;display:block;text-decoration:none}
+.c-block a:hover{color:var(--gold)}
+.c-block strong{color:var(--cream);font-weight:400;display:block;font-size:16px;margin-bottom:2px}
+.c-socials{display:flex;gap:20px;margin-top:36px}
+.c-social{font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:rgba(245,240,232,.4);text-decoration:none;border-bottom:1px solid rgba(201,168,76,.2);padding-bottom:3px;transition:color .2s,border-color .2s}
+.c-social:hover{color:var(--gold);border-color:var(--gold)}
+.contact-right{background:var(--mid);padding:90px 70px;display:flex;flex-direction:column;justify-content:center}
+.contact-right h2{font-family:'Cormorant Garamond',serif;font-size:clamp(24px,3vw,38px);font-weight:300;margin-bottom:12px}
+.contact-right>p{color:var(--muted);font-size:14px;margin-bottom:36px;line-height:1.8}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px}
+.form-field{display:flex;flex-direction:column;gap:7px;margin-bottom:16px}
+.form-field label{font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:var(--muted)}
+.form-field input,.form-field textarea,.form-field select{padding:13px 15px;border:1px solid rgba(26,18,8,.15);background:white;font-family:'Montserrat',sans-serif;font-size:13px;color:var(--text);outline:none;transition:border-color .2s;-webkit-appearance:none}
+.form-field input:focus,.form-field textarea:focus{border-color:var(--gold)}
+.form-field textarea{min-height:130px;resize:vertical}
+.form-note{font-size:12px;color:var(--muted);margin-top:14px;line-height:1.7}
+.contact-map{padding:0}
+.map-box{background:var(--deep);padding:60px;display:flex;flex-direction:column;align-items:center;gap:36px}
+.map-visual{width:100%;max-width:600px;aspect-ratio:16/9;background:rgba(255,255,255,.03);border:1px solid rgba(201,168,76,.12);position:relative;display:flex;align-items:center;justify-content:center}
+.map-visual::before{content:'';position:absolute;inset:20%;border:1px solid rgba(201,168,76,.1)}
+.map-label{text-align:center}
+.map-label h3{font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:300;color:var(--cream);margin-bottom:8px}
+.map-label p{font-size:13px;color:rgba(245,240,232,.4);line-height:1.8}
+.contact-alt{padding:80px 60px;background:var(--cream);display:grid;grid-template-columns:repeat(3,1fr);gap:2px}
+.alt-card{background:var(--mid);padding:40px}
+.alt-card h3{font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:300;margin-bottom:10px}
+.alt-card p{font-size:13px;color:var(--muted);line-height:1.8;margin-bottom:16px}
+.alt-card a{font-size:10px;letter-spacing:.15em;text-transform:uppercase;color:var(--terracotta);text-decoration:none;border-bottom:1px solid rgba(184,92,56,.3);padding-bottom:2px}
+@media(max-width:900px){
+  .contact-split{grid-template-columns:1fr}
+  .contact-left,.contact-right{padding:64px 24px}
+  .form-row{grid-template-columns:1fr}
+  .map-box{padding:40px 24px}
+  .contact-alt{padding:64px 24px;grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+<nav>
+  <a class="nav-logo" href="index.html"><img src="files/iicdcenterlogo.jpg" alt="IICD"></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li>
+    <li><a href="the-space.html">The Space</a></li><li><a href="artist-residency.html">Residency</a></li>
+    <li><a href="exhibitions.html">Exhibitions</a></li><li><a href="the-gallery.html">Gallery</a></li>
+    <li><a href="abuja-open-house-2022.html">Open House 2022</a></li><li><a href="abuja-open-house-2019.html">Open House 2019</a></li>
+    <li><a href="past-events.html">Past Events</a></li><li><a href="coming-events.html">Coming Events</a></li>
+    <li><a href="blog.html">Blog</a></li><li><a href="contact.html" class="active">Contact</a></li>
+  </ul>
+  <div class="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></div>
+</nav>
+<div class="mobile-nav" id="mobileNav">
+  <a href="index.html" onclick="closeMenu()">Home</a><a href="about.html" onclick="closeMenu()">About</a>
+  <a href="the-space.html" onclick="closeMenu()">The Space</a><a href="artist-residency.html" onclick="closeMenu()">Residency</a>
+  <a href="exhibitions.html" onclick="closeMenu()">Exhibitions</a><a href="the-gallery.html" onclick="closeMenu()">Gallery</a>
+  <a href="abuja-open-house-2022.html" onclick="closeMenu()">Open House 2022</a><a href="abuja-open-house-2019.html" onclick="closeMenu()">Open House 2019</a>
+  <a href="past-events.html" onclick="closeMenu()">Past Events</a><a href="coming-events.html" onclick="closeMenu()">Coming Events</a>
+  <a href="blog.html" onclick="closeMenu()">Blog</a><a href="contact.html" onclick="closeMenu()">Contact</a>
+</div>
+
+<div class="page-hero">
+  <div class="page-hero-bg" style="background-image:url('files/inside-out.jpg');"></div>
+  <div class="page-hero-content">
+    <p class="page-hero-eyebrow">Maitama, Abuja</p>
+    <h1>Get in <em>Touch</em></h1>
+  </div>
+</div>
+
+<div class="contact-split">
+  <div class="contact-left">
+    <span class="section-label">Contact IICD</span>
+    <h2>We'd Love<br>to Hear From You</h2>
+    <div class="c-block">
+      <h4>Director</h4>
+      <strong>Nduwhite Ndubuisi Ahanonu</strong>
+      <a href="mailto:nduwhite@gmail.com">nduwhite@gmail.com</a>
+      <a href="tel:+2348097501995">+234 809 750 1995</a>
+    </div>
+    <div class="c-block">
+      <h4>General Enquiries</h4>
+      <a href="mailto:info@iicd.org">info@iicd.org</a>
+      <a href="mailto:iicdcenter@blogpost.com">iicdcenter@blogpost.com</a>
+      <a href="tel:+2348097501995">+234 809 750 1995</a>
+      <a href="tel:+2348034056009">+234 803 405 6009</a>
+      <a href="tel:+2348098484552">+234 809 848 4552</a>
+    </div>
+    <div class="c-block">
+      <h4>Address</h4>
+      <p>3 Kachi Close<br>Area 3<br>Garki, Abuja<br>FCT, Nigeria</p>
+    </div>
+    <div class="c-block">
+      <h4>Opening Hours</h4>
+      <p>Monday – Saturday: 9:00AM – 6:30PM<br>Sunday &amp; Public Holidays: By Appointment</p>
+    </div>
+    <div class="c-socials">
+      <a href="https://instagram.com/iicdcenter" target="_blank" rel="noopener" class="c-social">Instagram</a>
+      <a href="https://facebook.com/iicdcenter" target="_blank" rel="noopener" class="c-social">Facebook</a>
+    </div>
+  </div>
+  <div class="contact-right">
+    <span class="section-label">Send a Message</span>
+    <h2>Write to IICD</h2>
+    <p>For exhibition proposals, residency applications, space hire, partnerships, or general enquiries — use the form below or email us directly.</p>
+    <div class="form-row">
+      <div class="form-field"><label>Your Name</label><input type="text" placeholder="Full name"></div>
+      <div class="form-field"><label>Email Address</label><input type="email" placeholder="your@email.com"></div>
+    </div>
+    <div class="form-row">
+      <div class="form-field"><label>Phone (Optional)</label><input type="tel" placeholder="+234 ..."></div>
+      <div class="form-field"><label>Subject</label>
+        <select>
+          <option>General Enquiry</option>
+          <option>Exhibition Proposal</option>
+          <option>Residency Application</option>
+          <option>Space Hire</option>
+          <option>Open House — Venue / Artist</option>
+          <option>Partnership / Sponsorship</option>
+          <option>Press &amp; Media</option>
+          <option>Curatorial Classes</option>
+          <option>Other</option>
+        </select>
+      </div>
+    </div>
+    <div class="form-field"><label>Message</label><textarea placeholder="Tell us about your enquiry..."></textarea></div>
+    <a href="mailto:info@iicd.org" class="btn btn-dark">Send via Email</a>
+    <p class="form-note">Clicking above will open your email client with the subject line pre-filled. Or email us directly at <a href="mailto:info@iicd.org" style="color:var(--terracotta);">info@iicd.org</a> or call <a href="tel:+2348097501995" style="color:var(--terracotta);">08097501995</a>.</p>
+  </div>
+</div>
+
+<div class="map-box">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14981.611818510542!2d7.4649978!3d9.0300511!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e0a407c7e8613%3A0xce7393447fa76f4a!2sIICDCENTER!5e1!3m2!1sen!2sng!4v1781608817551!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  <div class="map-visual">
+    <span style="font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:rgba(245,240,232,.2);text-align:center;">3 Kachi Close<br>Garki, Abuja</span>
+  </div>
+  <div class="map-label">
+    <h3>IICD Centre — Garki, Abuja</h3>
+    <p>3 Kachi Close, Area 3, Garki, Abuja FCT, Nigeria<br>Open Monday–Saturday, 9AM–6:30PM</p>
+  </div>
+</div>
+
+<div class="contact-alt">
+  <div class="alt-card reveal">
+    <h3>Exhibition Proposals</h3>
+    <p>Artists and curators wishing to exhibit at the IICD gallery should send a brief proposal, a statement of intent, and 5 work samples to info@iicd.org. We respond to all proposals within two weeks.</p>
+    <a href="mailto:info@iicd.org">Submit a Proposal →</a>
+  </div>
+  <div class="alt-card reveal">
+    <h3>Residency Applications</h3>
+    <p>To apply for the IICD artist residency programme, send a letter of intent, work samples, and your availability to nduwhite@gmail.com. See the Residency page for full programme details and fees.</p>
+    <a href="artist-residency.html">Learn About the Residency →</a>
+  </div>
+  <div class="alt-card reveal">
+    <h3>Space Hire &amp; Events</h3>
+    <p>The IICD Centre is available for hire for exhibitions, events, workshops, and private functions. Contact us to discuss your requirements, available dates, and pricing for different spaces within the centre.</p>
+    <a href="mailto:nduwhite@gmail.com">Enquire About Hire →</a>
+  </div>
+</div>
+
+<footer>
+  <p>© Copyright IICD. All Rights Reserved. Designed by iBot.</p>
+  <div class="footer-links">
+    <a href="https://instagram.com/iicdcenter" target="_blank">Instagram</a>
+    <a href="https://facebook.com/iicdcenter" target="_blank">Facebook</a>
+    <a href="contact.html">Contact</a>
+  </div>
+  <div class="footer-logo"><img src="files/iicdcenterlogo.jpg" alt="IICD"></div>
+</footer>
+<script src="shared.js"></script>
+</body>
+</html>

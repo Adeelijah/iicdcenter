@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Coming Events — IICD Abuja</title>
+<meta name="description" content="Upcoming programmes, workshops, and exhibitions at IICD Abuja. Stay connected to the city's creative scene.">
+<link rel="stylesheet" href="shared.css">
+<style>
+.ce-intro{background:var(--deep);padding:80px 60px}
+.ce-intro-inner{max-width:900px}
+.ce-intro h2{font-family:'Cormorant Garamond',serif;font-size:clamp(28px,4vw,50px);font-weight:300;color:var(--cream);margin-bottom:20px}
+.ce-intro p{color:rgba(245,240,232,.6);font-size:14px;line-height:1.9;margin-bottom:14px}
+.ce-list{padding:90px 60px;background:var(--cream)}
+.ce-item{display:grid;grid-template-columns:90px 1fr auto;gap:40px;align-items:center;padding:40px 0;border-bottom:1px solid rgba(26,18,8,.08);max-width:1000px}
+.ce-item:first-child{border-top:1px solid rgba(26,18,8,.08)}
+.ci-date{text-align:center}
+.ci-day{font-family:'Cormorant Garamond',serif;font-size:52px;font-weight:300;color:var(--gold);line-height:1}
+.ci-month{font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);margin-top:4px}
+.ci-info h3{font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:300;color:var(--text);margin-bottom:8px}
+.ci-meta{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:10px}
+.ci-info p{font-size:13px;color:var(--muted);line-height:1.8}
+.ci-tag{font-size:9px;letter-spacing:.18em;text-transform:uppercase;border:1px solid var(--gold);color:var(--gold);padding:8px 16px;white-space:nowrap}
+.ce-stay{background:var(--deep);padding:90px 60px;text-align:center}
+.ce-stay h2{font-family:'Cormorant Garamond',serif;font-size:clamp(26px,4vw,46px);font-weight:300;color:var(--cream);margin-bottom:16px}
+.ce-stay p{color:rgba(245,240,232,.55);font-size:14px;max-width:520px;margin:0 auto 36px}
+.ce-socials{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+.ce-archive{padding:80px 60px;background:var(--mid)}
+.ce-archive-inner{max-width:1000px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+.ce-archive h2{font-family:'Cormorant Garamond',serif;font-size:clamp(26px,3.5vw,44px);font-weight:300;margin-bottom:20px}
+.ce-archive p{color:var(--muted);font-size:14px;line-height:1.9;margin-bottom:14px}
+.ce-archive img{width:100%;display:block}
+@media(max-width:900px){
+  .ce-intro,.ce-list,.ce-stay,.ce-archive{padding:64px 24px}
+  .ce-item{grid-template-columns:60px 1fr;gap:20px}.ci-tag{display:none}
+  .ce-archive-inner{grid-template-columns:1fr;gap:40px}
+}
+</style>
+</head>
+<body>
+<nav>
+  <a class="nav-logo" href="index.html"><img src="files/iicdcenterlogo.jpg" alt="IICD"></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li>
+    <li><a href="the-space.html">The Space</a></li><li><a href="artist-residency.html">Residency</a></li>
+    <li><a href="exhibitions.html">Exhibitions</a></li><li><a href="the-gallery.html">Gallery</a></li>
+    <li><a href="abuja-open-house-2022.html">Open House 2022</a></li><li><a href="abuja-open-house-2019.html">Open House 2019</a></li>
+    <li><a href="past-events.html">Past Events</a></li><li><a href="coming-events.html" class="active">Coming Events</a></li>
+    <li><a href="blog.html">Blog</a></li><li><a href="contact.html">Contact</a></li>
+  </ul>
+  <div class="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></div>
+</nav>
+<div class="mobile-nav" id="mobileNav">
+  <a href="index.html" onclick="closeMenu()">Home</a><a href="about.html" onclick="closeMenu()">About</a>
+  <a href="the-space.html" onclick="closeMenu()">The Space</a><a href="artist-residency.html" onclick="closeMenu()">Residency</a>
+  <a href="exhibitions.html" onclick="closeMenu()">Exhibitions</a><a href="the-gallery.html" onclick="closeMenu()">Gallery</a>
+  <a href="abuja-open-house-2022.html" onclick="closeMenu()">Open House 2022</a><a href="abuja-open-house-2019.html" onclick="closeMenu()">Open House 2019</a>
+  <a href="past-events.html" onclick="closeMenu()">Past Events</a><a href="coming-events.html" onclick="closeMenu()">Coming Events</a>
+  <a href="blog.html" onclick="closeMenu()">Blog</a><a href="contact.html" onclick="closeMenu()">Contact</a>
+</div>
+
+<div class="page-hero">
+  <div class="page-hero-bg" style="background-image:url('files/abujaOPENhouse+2022BANNER.jpg');"></div>
+  <div class="page-hero-content">
+    <p class="page-hero-eyebrow">What's Next</p>
+    <h1><em>Coming</em> Events</h1>
+  </div>
+</div>
+
+<div class="ce-intro">
+  <div class="ce-intro-inner">
+    <span class="section-label">Upcoming at IICD</span>
+    <h2>Stay Connected to Abuja's Creative Scene</h2>
+    <p>IICD runs a year-round programme of exhibitions, residencies, workshops, open houses, and community events. Below are our planned activities for the coming season. Specific dates are to be confirmed — follow us on Instagram @iicdcenter and Facebook /iicdcenter for the latest updates and announcements.</p>
+    <p>To be added to our mailing list or to receive advance notice of Open House tickets, residency open calls, and exhibition openings, contact us at <a href="mailto:info@iicd.org" style="color:var(--gold);">info@iicd.org</a>.</p>
+  </div>
+</div>
+
+<section class="ce-list">
+  <div class="ce-item reveal">
+    <div class="ci-date"><div class="ci-day">TBC</div><div class="ci-month">2025–26</div></div>
+    <div class="ci-info">
+      <h3>Abuja Open House — Next Edition</h3>
+      <div class="ci-meta">Annual Festival · Multiple Venues, Abuja</div>
+      <p>The next edition of Abuja's largest art festival, organised by IICD in collaboration with the US Embassy. Four days of exhibitions, artist talks, live performances, and gallery hops across 22+ venues. Each edition is led by a newly selected board of directors. Follow @iicdcenter for the official announcement.</p>
+    </div>
+    <div class="ci-tag">Festival</div>
+  </div>
+  <div class="ce-item reveal">
+    <div class="ci-date"><div class="ci-day">TBC</div><div class="ci-month">2025–26</div></div>
+    <div class="ci-info">
+      <h3>International Artist Residency — Open Call</h3>
+      <div class="ci-meta">Residency Programme · IICD Centre, Maitama, Abuja</div>
+      <p>Applications for the next IICD residency cycle will open soon. The 30-day programme is open to Nigerian and international artists, with a focus on contemporary practice, cultural exchange, and sustainability. Fees from USD 1,000 (Abuja-based Nigerian artists) to USD 2,500 (international). See the Residency page for full details.</p>
+    </div>
+    <div class="ci-tag">Residency</div>
+  </div>
+  <div class="ce-item reveal">
+    <div class="ci-date"><div class="ci-day">TBC</div><div class="ci-month">2025–26</div></div>
+    <div class="ci-info">
+      <h3>Group Exhibition — New Season Programme</h3>
+      <div class="ci-meta">Group Show · IICD Gallery, Maitama</div>
+      <p>IICD's gallery will host a group exhibition bringing together emerging Nigerian artists working across painting, sculpture, photography, and installation. Artists wishing to be considered should submit a proposal and portfolio samples to info@iicd.org.</p>
+    </div>
+    <div class="ci-tag">Exhibition</div>
+  </div>
+  <div class="ce-item reveal">
+    <div class="ci-date"><div class="ci-day">TBC</div><div class="ci-month">2025–26</div></div>
+    <div class="ci-info">
+      <h3>Curatorial Classes — New Cohort</h3>
+      <div class="ci-meta">Training Programme · IICD Centre, Maitama</div>
+      <p>IICD's structured curatorial training programme will open for a new cohort. The programme offers rigorous learning, direct mentorship from Nduwhite Ndubuisi Ahanonu, and hands-on curatorial practice through IICD's live exhibition programme. Open to aspiring curators and cultural managers at all career stages.</p>
+    </div>
+    <div class="ci-tag">Education</div>
+  </div>
+  <div class="ce-item reveal">
+    <div class="ci-date"><div class="ci-day">TBC</div><div class="ci-month">2025–26</div></div>
+    <div class="ci-info">
+      <h3>Sustainability Workshop — Upcycling &amp; Creative Economy</h3>
+      <div class="ci-meta">Workshop · IICD Centre, Maitama</div>
+      <p>Building on the success of previous editions in 2018 and 2022, IICD is planning another workshop on upcycling, sustainability, and the creative economy — bringing together artists, architects, engineers, and environmental practitioners. Open call to be announced.</p>
+    </div>
+    <div class="ci-tag">Workshop</div>
+  </div>
+  <div class="ce-item reveal">
+    <div class="ci-date"><div class="ci-day">TBC</div><div class="ci-month">2025–26</div></div>
+    <div class="ci-info">
+      <h3>Film Screening &amp; Artist Discussion</h3>
+      <div class="ci-meta">Public Event · IICD Centre, Maitama</div>
+      <p>Following the success of IICD's 2018 screening of Racing Extinction, the centre will host another public film screening followed by a moderated discussion with Nigerian artists, curators, and critics. Free to attend. Date to be confirmed.</p>
+    </div>
+    <div class="ci-tag">Public Event</div>
+  </div>
+</section>
+
+<section class="ce-stay">
+  <span class="section-label" style="color:var(--gold);">Stay Connected</span>
+  <h2>Follow IICD's Programme</h2>
+  <p>For the latest announcements, exhibition openings, residency calls, and Open House news, follow us on social media or get in touch directly with the team.</p>
+  <div class="ce-socials">
+    <a href="https://instagram.com/iicdcenter" target="_blank" class="btn">Instagram @iicdcenter</a>
+    <a href="https://facebook.com/iicdcenter" target="_blank" class="btn">Facebook /iicdcenter</a>
+    <a href="contact.html" class="btn btn-light">Email the Team</a>
+  </div>
+</section>
+
+<section class="ce-archive">
+  <div class="ce-archive-inner">
+    <div>
+      <span class="section-label">Looking Back</span>
+      <h2>See What We've Done</h2>
+      <p>IICD has been running events, exhibitions, residencies, and workshops since 2010. Browse our full programme history — from the inaugural Abuja Open House in 2019 to international residencies in Sweden, solo shows at the IICD gallery, and capacity-building workshops with the US Embassy.</p>
+      <a href="past-events.html" class="btn btn-dark" style="margin-top:16px;">View Past Events</a>
+    </div>
+    <div>
+      <img src="files/abujaOPENhouse+2022BANNER.jpg" alt="Abuja Open House 2022" style="border:1px solid rgba(26,18,8,.1);">
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© Copyright IICD. All Rights Reserved. Designed by iBot.</p>
+  <div class="footer-links">
+    <a href="https://instagram.com/iicdcenter" target="_blank">Instagram</a>
+    <a href="https://facebook.com/iicdcenter" target="_blank">Facebook</a>
+    <a href="contact.html">Contact</a>
+  </div>
+  <div class="footer-logo"><img src="files/iicdcenterlogo.jpg" alt="IICD"></div>
+</footer>
+<script src="shared.js"></script>
+</body>
+</html>

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Artist Residency — IICD Abuja</title>
+<meta name="description" content="IICD's international artist residency programme in Abuja — supporting Nigerian and international artists with time, space, and mentorship.">
+<link rel="stylesheet" href="shared.css">
+<style>
+.res-intro{max-width:1100px;margin:0 auto;padding:90px 60px;display:grid;grid-template-columns:1.2fr 1fr;gap:80px;align-items:start}
+.res-intro-text h2{font-family:'Cormorant Garamond',serif;font-size:clamp(28px,3.5vw,46px);font-weight:300;line-height:1.1;margin-bottom:24px}
+.res-intro-text p{color:var(--muted);font-size:14px;line-height:1.9;margin-bottom:14px}
+.res-intro-text em{font-family:'Cormorant Garamond',serif;font-size:18px;color:var(--text);font-style:italic}
+.res-intro-img{position:relative}
+.res-intro-img img{width:100%;display:block}
+.res-intro-img::after{content:'';position:absolute;top:20px;left:20px;right:-20px;bottom:-20px;border:1px solid var(--gold);z-index:-1}
+.res-details{background:var(--deep);padding:90px 60px}
+.res-details-inner{max-width:1100px;margin:0 auto}
+.res-details h2{font-family:'Cormorant Garamond',serif;font-size:clamp(28px,3.5vw,44px);font-weight:300;color:var(--cream);margin-bottom:40px}
+.res-cols{display:grid;grid-template-columns:1fr 1fr;gap:60px}
+.res-col h3{font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:300;color:var(--gold);margin-bottom:16px}
+.res-col ul{list-style:none;display:flex;flex-direction:column;gap:10px}
+.res-col li{display:flex;gap:12px;font-size:13px;color:rgba(245,240,232,.6);line-height:1.7}
+.res-col li::before{content:'—';color:var(--gold);flex-shrink:0}
+.res-col h3+h3{margin-top:36px}
+.past-res{padding:90px 60px;background:var(--mid)}
+.past-res h2{font-family:'Cormorant Garamond',serif;font-size:clamp(28px,4vw,48px);font-weight:300;text-align:center;margin-bottom:12px}
+.past-res>p{text-align:center;color:var(--muted);font-size:14px;max-width:560px;margin:0 auto 56px}
+.past-list{max-width:1000px;margin:0 auto;display:flex;flex-direction:column;gap:2px}
+.past-item{background:var(--deep);padding:36px 40px;display:grid;grid-template-columns:90px 1fr;gap:32px;align-items:start;transition:transform .25s}
+.past-item:hover{transform:translateX(6px)}
+.past-year{font-family:'Cormorant Garamond',serif;font-size:36px;font-weight:300;color:var(--gold);line-height:1}
+.past-item h3{font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:300;color:var(--cream);margin-bottom:8px}
+.past-item p{font-size:13px;color:rgba(245,240,232,.5);line-height:1.8}
+.fees-section{padding:90px 60px;background:var(--cream)}
+.fees-inner{max-width:900px;margin:0 auto}
+.fees-inner h2{font-family:'Cormorant Garamond',serif;font-size:clamp(28px,4vw,46px);font-weight:300;margin-bottom:40px}
+.fee-cards{display:grid;grid-template-columns:1fr 1fr;gap:3px}
+.fee-card{padding:40px;border:1px solid rgba(26,18,8,.1)}
+.fee-card h3{font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:300;margin-bottom:8px}
+.fee-amount{font-family:'Cormorant Garamond',serif;font-size:42px;font-weight:300;color:var(--terracotta);margin-bottom:16px}
+.fee-card p{font-size:13px;color:var(--muted);line-height:1.8}
+@media(max-width:900px){
+  .res-intro{grid-template-columns:1fr;gap:48px;padding:64px 24px}.res-intro-img::after{display:none}
+  .res-details,.past-res,.fees-section{padding:64px 24px}
+  .res-cols{grid-template-columns:1fr;gap:36px}
+  .past-item{grid-template-columns:1fr;gap:8px}
+  .fee-cards{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+<nav>
+  <a class="nav-logo" href="index.html"><img src="files/iicdcenterlogo.jpg" alt="IICD"></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li>
+    <li><a href="the-space.html">The Space</a></li><li><a href="artist-residency.html" class="active">Residency</a></li>
+    <li><a href="exhibitions.html">Exhibitions</a></li><li><a href="the-gallery.html">Gallery</a></li>
+    <li><a href="abuja-open-house-2022.html">Open House 2022</a></li><li><a href="abuja-open-house-2019.html">Open House 2019</a></li>
+    <li><a href="past-events.html">Past Events</a></li><li><a href="coming-events.html">Coming Events</a></li>
+    <li><a href="blog.html">Blog</a></li><li><a href="contact.html">Contact</a></li>
+  </ul>
+  <div class="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></div>
+</nav>
+<div class="mobile-nav" id="mobileNav">
+  <a href="index.html" onclick="closeMenu()">Home</a><a href="about.html" onclick="closeMenu()">About</a>
+  <a href="the-space.html" onclick="closeMenu()">The Space</a><a href="artist-residency.html" onclick="closeMenu()">Residency</a>
+  <a href="exhibitions.html" onclick="closeMenu()">Exhibitions</a><a href="the-gallery.html" onclick="closeMenu()">Gallery</a>
+  <a href="abuja-open-house-2022.html" onclick="closeMenu()">Open House 2022</a><a href="abuja-open-house-2019.html" onclick="closeMenu()">Open House 2019</a>
+  <a href="past-events.html" onclick="closeMenu()">Past Events</a><a href="coming-events.html" onclick="closeMenu()">Coming Events</a>
+  <a href="blog.html" onclick="closeMenu()">Blog</a><a href="contact.html" onclick="closeMenu()">Contact</a>
+</div>
+
+<div class="page-hero">
+  <div class="page-hero-bg" style="background-image:url('files/poster4.jpg');"></div>
+  <div class="page-hero-content">
+    <p class="page-hero-eyebrow">Programme</p>
+    <h1>Artist <em>Residency</em></h1>
+  </div>
+</div>
+
+<div class="res-intro">
+  <div class="res-intro-text">
+    <span class="section-label">About the Programme</span>
+    <h2>Space to Create, Connect, and Develop</h2>
+    <p>IICD's international artist residency programme supports emerging and established creatives with dedicated time, space, and a rigorous curatorial framework to develop their practice in Abuja. The programme has, over the years, sparked new creative synergies between Nigerian and international artists.</p>
+    <p>The residency is designed to provoke fresh debates, arguments, and research opportunities. Residents engage with the local arts community through public events, workshops, and exhibitions, contributing to IICD's broader mission of repositioning the creative narratives of the Abuja art scene.</p>
+    <p>Past facilitators have included internationally recognised artists, academics, and curators — from Norwegian artist Prof. Vigdis Holen to US Embassy-sponsored sustainability practitioners. The residency typically runs for 30 days and concludes with a public presentation or exhibition of work developed during the period.</p>
+    <div class="divider-gold"></div>
+    <p><em>"The IICD Centre is a one-of-a-kind space for any growing curator, providing the kind of rigorous learning, development, and kindness that are so important for a budding curator."</em></p>
+    <p style="font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:var(--muted);margin-top:12px;">— Aisha Aliyu-Bima, Institut Français Curatorial Laureate</p>
+    <a href="contact.html" class="btn btn-dark" style="margin-top:32px;">Apply / Enquire</a>
+  </div>
+  <div class="res-intro-img"><img src="files/poster4.jpg" alt="IICD Residency"></div>
+</div>
+
+<section class="res-details">
+  <div class="res-details-inner">
+    <h2>Programme Details</h2>
+    <div class="res-cols">
+      <div class="res-col reveal">
+        <h3>What Residents Receive</h3>
+        <ul>
+          <li>Dedicated studio space at the IICD Centre in Maitama, Abuja</li>
+          <li>Light breakfast at the Centre daily throughout the residency</li>
+          <li>Local travel support for site visits and study trips across Abuja</li>
+          <li>Access to IICD's curated resource library of art books and catalogues</li>
+          <li>Engagement with IICD's network of artists and cultural organisations</li>
+          <li>Mentorship from Founder and Director Nduwhite Ndubuisi Ahanonu</li>
+          <li>Public programme participation — talks, workshops, and open studios</li>
+          <li>Exhibition or public presentation opportunity at the end of residency</li>
+          <li>Accommodation support available for out-of-town participants</li>
+        </ul>
+        <h3>Duration &amp; Format</h3>
+        <ul>
+          <li>Standard residency: 30 days at IICD Centre, Maitama</li>
+          <li>Workshop residencies: 2–3 weeks, topic-focused</li>
+          <li>International exchange residencies: arranged in partnership with overseas institutions</li>
+          <li>Concludes with public sharing, exhibition, or open studio event</li>
+        </ul>
+      </div>
+      <div class="res-col reveal">
+        <h3>Who Should Apply</h3>
+        <ul>
+          <li>Visual artists, sculptors, photographers, and mixed media practitioners</li>
+          <li>Curators with an upcoming project they wish to develop</li>
+          <li>Architects, designers, and environmentally-focused creatives</li>
+          <li>Open to Nigerian nationals and international applicants</li>
+          <li>Both emerging and established practitioners are welcome</li>
+          <li>Abuja-based Nigerian artists may qualify for a reduced participation fee</li>
+        </ul>
+        <h3>How to Apply</h3>
+        <ul>
+          <li>Submit a letter of intent detailing your proposed project and research</li>
+          <li>Confirm your availability for the full residency duration</li>
+          <li>Include 5 samples of relevant work or project documentation</li>
+          <li>State whether you require accommodation assistance</li>
+          <li>Send to: <a href="mailto:nduwhite@gmail.com" style="color:var(--gold);">nduwhite@gmail.com</a> or <a href="mailto:info@iicd.org" style="color:var(--gold);">info@iicd.org</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="past-res">
+  <span class="section-label" style="display:block;text-align:center;">History</span>
+  <h2>Past Residencies</h2>
+  <p>A selection of IICD's residency programmes and the artists and facilitators who have shaped them.</p>
+  <div class="past-list">
+    <div class="past-item reveal">
+      <div class="past-year">2022</div>
+      <div>
+        <h3>Upcycling Redefined</h3>
+        <p>Three-week workshop in collaboration with the US Embassy, AD Connect, and Transcorp Hilton Abuja. Brought together upcycling artists, architects, engineers, environmentalists, industrial designers, and AI/robotic engineers to re-evaluate their practice and the built environment. 15 creatives selected from an open call.</p>
+      </div>
+    </div>
+    <div class="past-item reveal">
+      <div class="past-year">2018</div>
+      <div>
+        <h3>Upcycling: The New Economy</h3>
+        <p>22 April – 3 May 2018. 11 artists selected from across Nigeria. Facilitated by Dr. Victor Fadeke (Hubert H. Humphrey / Ashoka Fellow), Dr. Chukwuemeka Nwigwe (UNN), Nduwhite Ndubuisi, Ifesinachi C. Nwanyanwu, Dotun Poopola, and Dada A. Oluwasuen. Exhibition of works opened 3 May at IICD Centre.</p>
+      </div>
+    </div>
+    <div class="past-item reveal">
+      <div class="past-year">2018</div>
+      <div>
+        <h3>Portfolio Review Workshop with Caroline Hancock</h3>
+        <p>Organised with France-based curator Caroline Hancock in collaboration with Institut Français, Abuja. Focused on developing portfolio presentation skills for emerging curators and artists — a targeted capacity-building workshop that drew participants from across Nigeria.</p>
+      </div>
+    </div>
+    <div class="past-item reveal">
+      <div class="past-year">2017</div>
+      <div>
+        <h3>International Artists in Residence — November 2017</h3>
+        <p>30-day intensive residency at 4 Oguda Close, Maitama. Artists in residence included Prof. Vigdis Holen (Norway) and others. Concluded with a public sharing session on Saturday 19 November, 3pm, inviting Abuja's public to engage with work developed during the period.</p>
+      </div>
+    </div>
+    <div class="past-item reveal">
+      <div class="past-year">2016</div>
+      <div>
+        <h3>Finding the True North — Karlstad, Sweden</h3>
+        <p>Co-curated international artist residency in Karlstad, Sweden — an exchange bringing Nigerian artists into dialogue with Swedish counterparts. Part of IICD's ongoing commitment to international creative exchange and cultural diplomacy.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="fees-section">
+  <div class="fees-inner">
+    <span class="section-label">Fees</span>
+    <h2>Participation Fees</h2>
+    <div class="fee-cards">
+      <div class="fee-card reveal">
+        <h3>International Participants</h3>
+        <div class="fee-amount">USD 2,500</div>
+        <p>Covers accommodation for one month at or near the IICD Centre, light daily breakfast, and local travel support for study and site visits. Exact rates vary by residency cycle — contact us for current details and availability.</p>
+      </div>
+      <div class="fee-card reveal">
+        <h3>Nigerian Participants (Abuja-based)</h3>
+        <div class="fee-amount">USD 1,000</div>
+        <p>Nigerian artists who have their own accommodation in Abuja may qualify for the reduced rate. Contact us for current exchange rates, scholarship availability, and subsidised places through our partner organisations.</p>
+      </div>
+    </div>
+    <p style="margin-top:28px;font-size:13px;color:var(--muted);max-width:620px;">Some residency cycles are subsidised through partnerships with the US Embassy, Institut Français, and other sponsors. Enquire about scholarship availability and supported places when applying.</p>
+    <a href="contact.html" class="btn btn-dark" style="margin-top:28px;">Enquire &amp; Apply</a>
+  </div>
+</section>
+
+<footer>
+  <p>© Copyright IICD. All Rights Reserved. Designed by iBot.</p>
+  <div class="footer-links">
+    <a href="https://instagram.com/iicdcenter" target="_blank">Instagram</a>
+    <a href="https://facebook.com/iicdcenter" target="_blank">Facebook</a>
+    <a href="contact.html">Contact</a>
+  </div>
+  <div class="footer-logo"><img src="files/iicdcenterlogo.jpg" alt="IICD"></div>
+</footer>
+<script src="shared.js"></script>
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Abuja Open House 2019 — IICD Abuja</title>
+<meta name="description" content="Abuja Open House 2019 — the inaugural edition of Abuja's landmark art festival, October 25–27, coinciding with IICD's 10th anniversary.">
+<link rel="stylesheet" href="shared.css">
+<style>
+.oh19-meta{background:var(--deep);padding:36px 60px;display:flex;gap:48px;flex-wrap:wrap;border-bottom:1px solid rgba(201,168,76,.1)}
+.oh19-meta-item .label{font-size:9px;letter-spacing:.25em;text-transform:uppercase;color:rgba(245,240,232,.35);margin-bottom:6px}
+.oh19-meta-item .val{font-family:'Cormorant Garamond',serif;font-size:22px;color:var(--cream);font-weight:300}
+.oh19-body{padding:90px 60px;max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1.1fr 1fr;gap:80px;align-items:start}
+.oh19-body h2{font-family:'Cormorant Garamond',serif;font-size:clamp(26px,3.5vw,44px);font-weight:300;line-height:1.1;margin-bottom:24px}
+.oh19-body p{color:var(--muted);font-size:14px;line-height:1.9;margin-bottom:14px}
+.oh19-body strong{color:var(--text)}
+.oh19-imgs{display:grid;grid-template-columns:1fr 1fr;gap:3px}
+.oh19-imgs img{width:100%;aspect-ratio:3/4;object-fit:cover;display:block;transition:transform .5s}
+.oh19-imgs img:hover{transform:scale(1.03)}
+.oh19-ann{background:var(--terracotta);padding:90px 60px}
+.oh19-ann-inner{max-width:1000px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+.oh19-ann h2{font-family:'Cormorant Garamond',serif;font-size:clamp(26px,3.5vw,46px);font-weight:300;color:white;margin-bottom:24px;line-height:1.1}
+.oh19-ann p{color:rgba(255,255,255,.8);font-size:14px;line-height:1.9;margin-bottom:14px}
+.oh19-ann img{width:100%;display:block;border:3px solid rgba(255,255,255,.15)}
+.oh19-ex{padding:90px 60px;background:var(--mid)}
+.oh19-ex h2{font-family:'Cormorant Garamond',serif;font-size:clamp(26px,4vw,46px);font-weight:300;margin-bottom:48px}
+.oh19-ex-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:2px;max-width:1000px}
+.oh19-ex-card{background:var(--deep);padding:40px}
+.oh19-ex-card h3{font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:300;color:var(--cream);margin-bottom:10px}
+.oh19-ex-card .venue{font-size:9px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin-bottom:14px}
+.oh19-ex-card p{font-size:13px;color:rgba(245,240,232,.5);line-height:1.8}
+.oh19-review{background:var(--deep);padding:80px 60px;text-align:center}
+.oh19-review blockquote{font-family:'Cormorant Garamond',serif;font-size:clamp(18px,2.5vw,30px);font-style:italic;color:var(--cream);max-width:800px;margin:0 auto;line-height:1.55;font-weight:300}
+.oh19-review cite{display:block;margin-top:24px;font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:rgba(201,168,76,.7);font-style:normal}
+@media(max-width:900px){
+  .oh19-meta{padding:28px 24px;gap:28px}
+  .oh19-body{grid-template-columns:1fr;gap:40px;padding:64px 24px}
+  .oh19-ann{padding:64px 24px}.oh19-ann-inner{grid-template-columns:1fr;gap:40px}
+  .oh19-ex{padding:64px 24px}.oh19-ex-grid{grid-template-columns:1fr}
+  .oh19-review{padding:64px 24px}
+}
+</style>
+</head>
+<body>
+<nav>
+  <a class="nav-logo" href="index.html"><img src="files/iicdcenterlogo.jpg" alt="IICD"></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li>
+    <li><a href="the-space.html">The Space</a></li><li><a href="artist-residency.html">Residency</a></li>
+    <li><a href="exhibitions.html">Exhibitions</a></li><li><a href="the-gallery.html">Gallery</a></li>
+    <li><a href="abuja-open-house-2022.html">Open House 2022</a></li><li><a href="abuja-open-house-2019.html" class="active">Open House 2019</a></li>
+    <li><a href="past-events.html">Past Events</a></li><li><a href="coming-events.html">Coming Events</a></li>
+    <li><a href="blog.html">Blog</a></li><li><a href="contact.html">Contact</a></li>
+  </ul>
+  <div class="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></div>
+</nav>
+<div class="mobile-nav" id="mobileNav">
+  <a href="index.html" onclick="closeMenu()">Home</a><a href="about.html" onclick="closeMenu()">About</a>
+  <a href="the-space.html" onclick="closeMenu()">The Space</a><a href="artist-residency.html" onclick="closeMenu()">Residency</a>
+  <a href="exhibitions.html" onclick="closeMenu()">Exhibitions</a><a href="the-gallery.html" onclick="closeMenu()">Gallery</a>
+  <a href="abuja-open-house-2022.html" onclick="closeMenu()">Open House 2022</a><a href="abuja-open-house-2019.html" onclick="closeMenu()">Open House 2019</a>
+  <a href="past-events.html" onclick="closeMenu()">Past Events</a><a href="coming-events.html" onclick="closeMenu()">Coming Events</a>
+  <a href="blog.html" onclick="closeMenu()">Blog</a><a href="contact.html" onclick="closeMenu()">Contact</a>
+</div>
+
+<div class="page-hero">
+  <div class="page-hero-bg" style="background-image:url('files/ABUJAOPENHOUSEWEBBANNER3.jpg');"></div>
+  <div class="page-hero-content">
+    <p class="page-hero-eyebrow">Inaugural Edition · 1st</p>
+    <h1>Abuja Open <em>House</em> 2019</h1>
+  </div>
+</div>
+
+<div class="oh19-meta">
+  <div class="oh19-meta-item"><div class="label">Edition</div><div class="val">Inaugural (1st)</div></div>
+  <div class="oh19-meta-item"><div class="label">Dates</div><div class="val">October 25–27, 2019</div></div>
+  <div class="oh19-meta-item"><div class="label">Duration</div><div class="val">3 Days</div></div>
+  <div class="oh19-meta-item"><div class="label">Locations</div><div class="val">Multiple Venues, Abuja</div></div>
+  <div class="oh19-meta-item"><div class="label">In Collaboration With</div><div class="val">US Embassy Abuja</div></div>
+  <div class="oh19-meta-item"><div class="label">Milestone</div><div class="val">IICD 10th Anniversary</div></div>
+</div>
+
+<div class="oh19-body">
+  <div>
+    <span class="section-label">The Inaugural Edition</span>
+    <h2>Abuja's First Open House — A City Transformed</h2>
+    <p>The inaugural Abuja Open House — held October 25–27, 2019 — was the realisation of a long-held vision by Nduwhite Ndubuisi Ahanonu to create a festival that would bridge the gap between Abuja's creative community, the general public, and the city's art galleries and cultural spaces.</p>
+    <p>Created in collaboration with the United States Embassy in Abuja, the first edition set the template for what would become the city's most significant visual arts event. Multi-venue, multi-day, and radically public, it activated spaces across the city that had never before been used for art — from hotel lobbies to embassy courtyards and private galleries.</p>
+    <p>The Open House model was described by critics as <strong>"afflicted with none of the numbing predictability and officialdom of the major art events hitherto held in the federal capital city."</strong> It was a watershed moment for the Abuja creative scene — proof that the city had both the appetite and the infrastructure for a serious contemporary art festival.</p>
+    <p>Among the featured exhibitions was <strong>Time in Perspective</strong> — a group show presented at the lobby of the Nordic Hotel, Mabushi, opened at a VIP reception serenaded by Turkish musical duo Sinan Bora Saribas (violin) and Kutluhan Gozutok (guitar). The pairing of art, music, and architecture in an unexpected venue set the tone for the Open House's distinctive approach.</p>
+    <a href="abuja-open-house-2022.html" class="btn btn-dark" style="margin-top:24px;">See the 2022 Edition →</a>
+  </div>
+  <div class="oh19-imgs">
+    <img src="files/ABUJAOPENHOUSEWEBBANNER3.jpg" alt="Open House 2019 Banner">
+    <img src="files/20617045_10155647708694851_729990303113732469_o.jpg" alt="Community">
+    <img src="files/POSTERMARCH28.jpg" alt="Programme Poster">
+    <img src="files/poster4.jpg" alt="Exhibition Poster">
+  </div>
+</div>
+
+<section class="oh19-ann">
+  <div class="oh19-ann-inner">
+    <div>
+      <span class="section-label" style="color:rgba(255,255,255,.55);">Special Milestone</span>
+      <h2>IICD's 10th Anniversary</h2>
+      <p>The 2019 Open House coincided with IICD's 10th anniversary — making it a doubly significant occasion. The centre marked a decade of creative work in Abuja with exhibitions, awards to key partners, and a celebration of the people who had made IICD's journey possible.</p>
+      <p>Partners recognised at the anniversary included the <strong>US Embassy Abuja</strong> and <strong>Transcorp Hilton Hotel</strong> — both acknowledged for their sustained support of the arts in Nigeria. The awards ceremony underlined IICD's ethos of collaborative relationship-building as the foundation for lasting cultural impact.</p>
+      <p>Over ten years, IICD had built residency programmes, mounted exhibitions, trained curators, represented Nigeria at the Dakar Biennale, and — through its collaboration with the US Embassy and Institut Français — positioned Abuja as a city with a serious, growing contemporary art scene.</p>
+      <p>Looking ahead from the anniversary, Ahanonu pledged: <em>"In the future, we will increase the number of activities to strategically democratise art and culture, taking it to communities that are disenfranchised."</em></p>
+      <a href="about.html" class="btn btn-light" style="margin-top:24px;">About IICD's History</a>
+    </div>
+    <div>
+      <img src="files/10TH+ANNIVERSARY3.jpg" alt="10th Anniversary">
+    </div>
+  </div>
+</section>
+
+<section class="oh19-ex">
+  <span class="section-label">2019 Programme</span>
+  <h2>Featured Exhibitions &amp; Events</h2>
+  <div class="oh19-ex-grid">
+    <div class="oh19-ex-card reveal">
+      <div class="venue">Nordic Hotel, Mabushi, Abuja</div>
+      <h3>Time in Perspective</h3>
+      <p>Group exhibition exploring how artists negotiate time — historical, personal, and collective — in their practice. Opened at a VIP reception with live music by Turkish duo Sinan Bora Saribas (violin) and Kutluhan Gozutok (guitar). One of the flagship exhibitions of the inaugural Open House.</p>
+    </div>
+    <div class="oh19-ex-card reveal">
+      <div class="venue">Multiple Venues, Abuja</div>
+      <h3>Multi-Venue Gallery Hop</h3>
+      <p>The Open House activated locations across Abuja over three days, bringing audiences to galleries, cultural spaces, and unexpected venues. Participants were able to follow a curated trail through the city's creative landscape — many experiencing art in a public setting for the first time.</p>
+    </div>
+    <div class="oh19-ex-card reveal">
+      <div class="venue">IICD Centre, Maitama</div>
+      <h3>10th Anniversary Exhibition &amp; Awards</h3>
+      <p>At the IICD Centre, the 10th anniversary was marked with an exhibition and a ceremony awarding partners — including the US Embassy and Transcorp Hilton — for their role in advancing the arts in Abuja over the preceding decade.</p>
+    </div>
+    <div class="oh19-ex-card reveal">
+      <div class="venue">Festival-Wide</div>
+      <h3>Talks, Performances &amp; Public Programme</h3>
+      <p>Alongside the exhibitions, the 2019 Open House featured artist talks, performances, and public events open to all Abuja residents — creating a genuinely inclusive, city-wide cultural moment rather than a gatekept art-world event.</p>
+    </div>
+  </div>
+</section>
+
+<section class="oh19-review">
+  <span class="section-label" style="color:var(--gold);">Critical Response</span>
+  <blockquote>"The Abuja Open House is a one-of-a-kind blend of dynamic art experiences and gallery hopping that provides solid foundations for convergence and synchronisation of Abuja's creative framework — afflicted with none of the numbing predictability and officialdom of the major art events hitherto held in the federal capital city."</blockquote>
+  <cite>— Critical review of the Abuja Open House</cite>
+</section>
+
+<footer>
+  <p>© Copyright IICD. All Rights Reserved. Designed by iBot.</p>
+  <div class="footer-links">
+    <a href="https://instagram.com/iicdcenter" target="_blank">Instagram</a>
+    <a href="https://facebook.com/iicdcenter" target="_blank">Facebook</a>
+    <a href="contact.html">Contact</a>
+  </div>
+  <div class="footer-logo"><img src="files/iicdcenterlogo.jpg" alt="IICD"></div>
+</footer>
+<script src="shared.js"></script>
+</body>
+</html>
